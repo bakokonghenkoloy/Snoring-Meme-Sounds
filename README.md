@@ -46,3 +46,5 @@ Legit Actual Supported Versions:
 
 No dependencies what so ever!
 No other mods needed for this!
+
+[MIT License](https://github.com/rabbiarlan/Villager-Meme-Sounds/tree/main?tab=MIT-1-ov-file)
