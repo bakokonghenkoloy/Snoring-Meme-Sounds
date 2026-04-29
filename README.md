@@ -62,7 +62,8 @@ Placed 5 new sound effects for this Resource Pack as the core identity of this P
 ## Alpha v1.1 - Best update to my Resource Pack ever
 Deleted that last strangely weird stuff sound effect  
 Added the sound for players too!  
-Fixed problem about villagers can't be heard sleeping with the snoring resource pack in 1.21.11 *(maybe even in my 26.1.2 instance too..)* Because it's in alpha stage
+Fixed problem about villagers can't be heard sleeping with the snoring resource pack in 1.21.11  
+*(maybe even in my 26.1.2 instance too..)* Because it's in alpha stage
 ## Beta v1.2 - In the future...
 _soon..._
 
