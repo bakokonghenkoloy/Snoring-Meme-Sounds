@@ -3,31 +3,31 @@
     "sounds": [
       {
         "name": "entity/villager/snore1",
-        "volume": 0.85,
+        "volume": 1.0,
         "pitch": 1.0,
         "stream": false
       },
       {
         "name": "entity/villager/snore2",
-        "volume": 0.85,
-        "pitch": 0.95,
+        "volume": 1.0,
+        "pitch": 1.0,
         "stream": false
       },
       {
         "name": "entity/villager/snore3",
-        "volume": 0.8,
-        "pitch": 0.9,
+        "volume": 1.0,
+        "pitch": 1.0,
         "stream": false
       },
       {
         "name": "entity/villager/snore4",
-        "volume": 0.75,
-        "pitch": 1.05,
+        "volume": 1.0,
+        "pitch": 1.0,
         "stream": false
       },
       {
         "name": "entity/villager/snore5",
-        "volume": 0.85,
+        "volume": 1.0,
         "pitch": 1.0,
         "stream": false
       }
