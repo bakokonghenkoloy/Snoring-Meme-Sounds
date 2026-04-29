@@ -1,6 +1,9 @@
 # This Villager-Meme-Sounds project adds **5 brand new sound effects** to villagers only!
 
-Sorry it can't support and add players sleeping... _(we'll update this modpack to support it too soon..)_![Random Image that i have no clue why](https://cdn.modrinth.com/data/cached_images/53b113259d73cb7d56b77db7b7ace4c7166ff19d_0.webp)
+Sorry it can't support and add players sleeping...  
+_(we'll update this modpack to support it in the very next version.. trust me🥰️🥹️)_
+
+![Random Image that i have no clue why](https://cdn.modrinth.com/data/cached_images/53b113259d73cb7d56b77db7b7ace4c7166ff19d_0.webp)
 
 ### Here are examples:
 
