@@ -15,8 +15,8 @@ Sorry it can't support and add players sleeping... _(we'll update this modpack t
 
 Legit Actual Supported Versions:
 
-1. 26.1.2 *(don't worry if the Resource Pack said it's incompatible, just*
-2. 26.1.1  *ignore the message as this resource packs are still compatible)*
+1. 26.1.2    *(don't worry if the Resource Pack said it's incompatible, just*
+2. 26.1.1     *ignore the message as this resource pack is still compatible)*
 3. 26.1
 4. 1.21.11
 5. 1.21.10
