@@ -47,4 +47,18 @@ Legit Actual Supported Versions:
 No dependencies what so ever!
 No other mods needed for this!
 
+# Devlog
+## v1.0 - Now created in April 29, 2026!
+Placed 5 new sound effects for this Resource Pack as the core identity of this Pack.
+
+• AUGHHHH AUGHHHH  
+• Mimimimimimimimimi  
+• Loud meme snoring sound effect  
+• Mario sleeping  
+• Idk this last part
+## v1.1 - Strangely weird stuff removed
+Deleted that last weird sound effect
+## v1.2 - In the future...
+_soon..._
+
 [MIT License](https://github.com/rabbiarlan/Villager-Meme-Sounds/tree/main?tab=MIT-1-ov-file)
