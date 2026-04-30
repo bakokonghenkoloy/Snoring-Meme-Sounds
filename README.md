@@ -17,7 +17,7 @@ Hybrid datapack + resource pack — **one ZIP file**:
 1. Drop `.zip` into `[world]/datapacks/`
 2. Run `/reload`
 3. Accept resource pack prompt
-4. Go find a village at night 💀
+4. Go find a village at night and enjoy 💀🥀️ son🙏️
 
 ## Versions
 **1.21 → 26.1.2** and beyond • Java Edition only
