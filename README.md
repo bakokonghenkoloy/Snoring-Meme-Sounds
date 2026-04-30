@@ -38,7 +38,7 @@ Hybrid datapack + resource pack — **one ZIP file**:
 - Now uses your actual real OGG recordings
 
 ### Alpha v1.2_1 — April 30, 2026
-- Fixed invalid standalone parse error without execute commands
+- Fixed invalid standalone parse error that has no execution type commands
 - Every command is now a single line.
 
 ## License
