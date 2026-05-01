@@ -109,7 +109,7 @@ This pack comes as **two separate ZIP files**. You need **both** for the full ex
 >
 > ## ⚠️ Still in alpha! Bugs, problems and issues of this Hybrid Pack may exist. ⚠️
 >
-> If you want to report.. Make it fully detailed with clarity and gather as much info as possible, because simple requests like: *"It doesn't work when I sleep or when they lie down in bed" will still count"* still counts, we must figure it out why and how in order to mercilessly annihilate this issue to the **shadow realm** with no remorse.
+> If you want to legitimately report or reading this all after you encounter this issue. Create a GitHub account if you're not joined. Then make it fully detailed with clarity, coherence and gather as much info as possible, because simple requests like: *"It doesn't work when I sleep or when they lie down in bed" will still count, we must figure it out why and how in order to mercilessly annihilate this issue to the **shadow realm** with no remorse.
 
 ---
 
