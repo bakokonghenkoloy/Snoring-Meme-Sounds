@@ -36,8 +36,8 @@ This pack comes as **two separate ZIP files**. You need **both** for the full ex
 
 | File | What it does |
 |---|---|
-| `..._RESOURCEPACK.zip` | Provides the actual snore audio files |
-| `..._DATAPACK.zip` | Makes villagers snore repeatedly + adds player snoring |
+| `Villager_Snoring_..._RESOURCEPACK.zip` | Provides the actual snore audio files |
+| `Villager_Snoring_..._DATAPACK.zip` | Makes villagers snore repeatedly + adds player snoring |
 
 > **⚠️ The Resource Pack alone gives villagers 5 sleeping snore sounds but never fully utilized in-game.**  
 > The Datapack adds continuous snoring every few seconds and also makes YOUR character snore when sleeping too  
@@ -51,7 +51,7 @@ This pack comes as **two separate ZIP files**. You need **both** for the full ex
 ## How to Proprely Install! 🥰️
 
 ### Step 1 — Resource Pack *(DO THIS FIRST, NO SKIPPING OF STEPS)*
-1. Download `Villager_Snoring_RESOURCEPACK.zip` by selecting Platform as **Resource Pack** in Download
+1. Download `Villager_Snoring_..._RESOURCEPACK.zip` by selecting the platform as **Resource Pack** in Download
 2. **Do NOT unzip it**
 3. Move it to: `.minecraft/resourcepacks/`
    - Windows: `%appdata%\.minecraft\resourcepacks\`
@@ -63,7 +63,7 @@ This pack comes as **two separate ZIP files**. You need **both** for the full ex
 7. Click **Done** and wait the Minecraft refresh finishes!
 
 ### Step 2 — Datapack *(ALSO RECOMMENDED)*
-1. Download `Villager_Snoring_DATAPACK.zip` by selecting Platform as **Datapack** in Download
+1. Download `Villager_Snoring_..._DATAPACK.zip` by selecting the platform as **Datapack** in Download
 2. **Do NOT unzip it**
 3. Move it into your current specific world's folder: `saves/[your world name]/datapacks/`
 4. Open that world and type `/reload` in chat
@@ -108,7 +108,9 @@ This pack comes as **two separate ZIP files**. You need **both** for the full ex
 > *Made for the glory of God and the suffering of every villager trying to sleep in peace... 😭🥹🙏*
 >
 > ## ⚠️ Still in alpha! Bugs, problems and issues of this Hybrid Pack may exist. ⚠️
->
+> 
+> 🗣️📢️‼️ Report them inside the site by go to the Issues Tab within this Repository!
+> 
 > If you want to truly actually legitimately report and or reading this all after you encounter this kind of specific issue you can't fully explain or experience because it's supposed to be a part of this Resource/Data Pack but it seems like it isn't included? Create a GitHub account if you're not joined. Then make it fully detailed with clarity, coherence and gather as much info as possible properly, because simple requests like: *"It doesn't work when I sleep or when my slaves lie down in bed!!!👿️💢️😫️ May you please fix it!!👉️👈️🥺️"* will still count, we must figure it out **when, where, what, why, how, and who** in order to mercilessly annihilate this issue to the **shadow realm** with no remorse.
 
 ---
