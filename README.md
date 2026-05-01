@@ -109,7 +109,7 @@ This pack comes as **two separate ZIP files**. You need **both** for the full ex
 >
 > ## ⚠️ Still in alpha! Bugs, problems and issues of this Hybrid Pack may exist. ⚠️
 >
-> If you want to truly actually legitimately report and or reading this all after you encounter this kind of specific issue you can't fully explain or experience because it's supposed to be a part of this Resource/Data Pack but it seems like it isn't included? Create a GitHub account if you're not joined. Then make it fully detailed with clarity, coherence and gather as much info as possible, because simple requests like: *"It doesn't work when I sleep or when my slaves lie down in bed!!!👿️💢️😫️ May you please fix it!!👉️👈️🥺️"* will still count, we must figure it out **when, where, what, why, how, and who** in order to mercilessly annihilate this issue to the **shadow realm** with no remorse.
+> If you want to truly actually legitimately report and or reading this all after you encounter this kind of specific issue you can't fully explain or experience because it's supposed to be a part of this Resource/Data Pack but it seems like it isn't included? Create a GitHub account if you're not joined. Then make it fully detailed with clarity, coherence and gather as much info as possible properly, because simple requests like: *"It doesn't work when I sleep or when my slaves lie down in bed!!!👿️💢️😫️ May you please fix it!!👉️👈️🥺️"* will still count, we must figure it out **when, where, what, why, how, and who** in order to mercilessly annihilate this issue to the **shadow realm** with no remorse.
 
 ---
 
