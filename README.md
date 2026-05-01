@@ -101,8 +101,6 @@ This pack comes as **two separate ZIP files**. You need **both** for the full ex
 - Mario sleeping
 - Idk bout this last part
 
-[Open-Source Code!](https://github.com/rabbiarlan/Villager-Meme-Sounds)
-
 ### Alpha v1.1 — April 29, 2026
 - Added player snoring support
 - Attempted first datapack attempt for player snoring (had critical bugs)
