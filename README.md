@@ -108,7 +108,7 @@ This pack comes as **two separate ZIP files**. You need **both** for the full ex
 >
 > 🗣️📢‼️ Report them in the *Issues* Tab on the Repository!
 >
-> Make it very detailed — **when, where, what, why, how, and who** — so we can mercilessly annihilate the issue to the shadow realm with no remorse and no problem. Simple reports like *"It doesn't work when I sleep or when my slaves lie down in bed!!!👿️💢️😫️ May you pwease~~ fix it~~!!!👉️👈️🥺️ OwO"* and *"unsa man ning Minecraft Pack bro laina ani oi😫️🙏️ gubot na kaayo ayo lang ug tarong bai🗣️📢️🔥️‼️⚠️💯️🇵🇭️😫️"* still count, we'll figure it out together.
+> Make it very detailed — **when, where, what, why, how, and who** — so we can mercilessly annihilate the issue to the shadow realm with no remorse and no problem. Simple reports like *"It doesn't work when I sleep😫️ or when my slaves lie down in bed!!!👿️💢️😩️ May you pwease~~ fix it~~!!!👉️👈️🥺️ OwO"* and *"unsa man ning Minecraft Pack bro laina ani oi😫️😩️🙏️ gubot na kaayo ayo lang ug tarong bai🗣️📢️🔥️😩️‼️⚠️💯️🇵🇭️😫️🇵🇭️"* still count, we'll figure it out together.
 
 ---
 
