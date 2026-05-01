@@ -98,7 +98,7 @@ This pack comes as **two separate ZIP files**. You need **both** for the full ex
 | No sound at all | Check that the Resource Pack is in the **Selected (right) column** and at the **very top** *(if you have Resource Packs that tells you to set it top first they're lying to you)* than in the **Available (left) column** |
 | Resource pack conflict | Move Villager Snoring to the **very top** of selected packs |
 | Gold message didn't appear on `/reload` | Double-check the `Villager_Snoring_..._DATAPACK.zip` is inside `saves/[world]/datapacks/` not `resourcepacks/` |
-| Villagers not snoring | Make sure they're fully lying down in beds, not just standing near them or you installed the Datapack and Resource Pack properly |
+| Villagers not snoring | Make sure they're fully lying down in beds, not just standing near them or you did not install the Datapack and Resource Pack properly |
 
 ---
 
