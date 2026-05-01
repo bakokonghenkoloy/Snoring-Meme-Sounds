@@ -60,14 +60,14 @@ This pack comes as **two separate ZIP files**. You need **both** for the full ex
 4. In Minecraft: **Options → Resource Packs**
 5. Find it in the **Available(left column)** → click the **arrow →** to move it to the right to make it **Selected(right column)**
 6. Drag it to the **very top** of the right column if it's below any other Resource Packs
-7. Click **Done** and it'll refresh the Minecraft!
+7. Click **Done** and wait the Minecraft refresh finishes!
 
 ### Step 2 — Datapack *(ALSO RECOMMENDED)*
 1. Download `Villager_Snoring_DATAPACK.zip` by selecting Platform as **Datapack** in Download
 2. **Do NOT unzip it**
 3. Move it into your current specific world's folder: `saves/[your world name]/datapacks/`
 4. Open that world and type `/reload` in chat
-5. You should see this golden message: **[Snore Pack v1.2_2-alpha] Loaded!** meaning the Resource Pack fully works!
+5. You should see this golden message: **[Snore Pack v1.2_2-alpha] Loaded!** meaning the Datapack is loaded and active!
 
 ### Step 3 — The Test
 - Naturally find a village, wait for night in survival (or `/time set midnight` in creative)
