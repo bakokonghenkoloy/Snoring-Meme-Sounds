@@ -123,7 +123,7 @@ This pack comes as **two separate ZIP files**. You need **both** for the full ex
 - Fixed `SleepTimer:1s` → `SleepTimer:1` (wrong NBT type was breaking player snoring completely)
 - Separated into two ZIP files (resource pack + datapack) — more reliable than embedded approach
 - Improved install instructions
-- Changed the primary Data Pack Platform to include the Resource Pack as primary.
+- Added Resource Pack as primary platform with Data Pack Platform.
 
 ---
 
