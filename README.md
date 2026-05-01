@@ -8,11 +8,11 @@ Adds **5 unhinged meme snoring sounds** to villagers AND players when they sleep
 ## ⚠️ IMPORTANT:
 This project includes TWO seperate files:
 - Resource Pack **(REQUIRED for sounds)**   
-- Datapack **(OPTIONAL but highly recommended!)**
+- Datapack **(ALSO REQUIRED for it to work)**
 
 > 👉 You NEED the Resource Pack for ANY sound to work.   
 > 👉 The Datapack adds continuous snoring + player snoring.
-### 💡 For the full experience, install BOTH.
+### 💡 For the full experience in order to 100% work, install BOTH.
 
 ![Pack Icon](https://cdn.modrinth.com/data/cached_images/53b113259d73cb7d56b77db7b7ace4c7166ff19d_0.webp)
 
@@ -39,46 +39,49 @@ This pack comes as **two separate ZIP files**. You need **both** for the full ex
 | `..._RESOURCEPACK.zip` | Provides the actual snore audio files |
 | `..._DATAPACK.zip` | Makes villagers snore repeatedly + adds player snoring |
 
-> **⚠️ The Resource Pack alone gives villagers one snore when lying down.**  
-> The Datapack adds continuous snoring every 4 seconds and also makes YOUR character snore.   
+> **⚠️ The Resource Pack alone gives villagers 5 sleeping snore sounds but never fully utilized in-game.**  
+> The Datapack adds continuous snoring every few seconds and also makes YOUR character snore when sleeping too  
 > Both together = full experience.   
 
 > **💡 If something feels broken**   
-> 90% of the time it's because one of the files is missing or placed in the wrong folder.
+> 90% of the time it's because one of the files is either missing or placed in the wrong sub directory folder where the path file location is designated.
 
 ---
 
-## How to Install
+## How to Proprely Install! 🥰️
 
-### Step 1 — Resource Pack
-1. Download `..._RESOURCEPACK.zip`
+### Step 1 — Resource Pack *(DO THIS FIRST, NO SKIPPING OF STEPS)*
+1. Download `Villager_Snoring_RESOURCEPACK.zip` by selecting Platform as **Resource Pack** in Download
 2. **Do NOT unzip it**
 3. Move it to: `.minecraft/resourcepacks/`
    - Windows: `%appdata%\.minecraft\resourcepacks\`
    - Linux: `~/.minecraft/resourcepacks/`
+   > *Or it depends where your Minecraft Resource Pack Folder is currently located.*
 4. In Minecraft: **Options → Resource Packs**
-5. Find it in the **left column** → click the **arrow →** to move it to the right
-6. Drag it to the **very top** of the right column
-7. Click **Done**
+5. Find it in the **Available(left column)** → click the **arrow →** to move it to the right to make it **Selected(right column)**
+6. Drag it to the **very top** of the right column if it's below any other Resource Packs
+7. Click **Done** and it'll refresh the Minecraft!
 
-### Step 2 — Datapack *(optional but recommended)*
-1. Download `..._DATAPACK.zip`
+### Step 2 — Datapack *(ALSO RECOMMENDED)*
+1. Download `Villager_Snoring_DATAPACK.zip` by selecting Platform as **Datapack** in Download
 2. **Do NOT unzip it**
-3. Move it into your specific world's folder: `saves/[your world name]/datapacks/`
+3. Move it into your current specific world's folder: `saves/[your world name]/datapacks/`
 4. Open that world and type `/reload` in chat
-5. You should see this gold message: **[Snore Pack v1.2_2-alpha] Loaded!**
+5. You should see this golden message: **[Snore Pack v1.2_2-alpha] Loaded!** meaning the Resource Pack fully works!
 
-### Step 3 — Test
-- Find a village, wait for night (or `/time set midnight`)
+### Step 3 — The Test
+- Naturally find a village, wait for night in survival (or `/time set midnight` in creative)
 - Stand within **10 blocks** of a sleeping villager
 - Make sure **Friendly Creatures** volume is at 100% in sound settings
 - Wait up to 4 seconds after villagers lie down
+  > If it doesn't work then try going 10 blocks away from villager's radius and come back to see after 4 seconds of villagers lie down in their beds
 
 > 🚫 **DO NOT MIX THEM UP:**
 > - Resource Pack → goes in Instance's `resourcepacks/`
 > - Datapack → goes in World's `datapacks/`
 > 
-> If you put them in the wrong folder, it will NOT work.
+> If you perhaps accidentally put them in the wrong folder, it will NOT work.   
+> Then try your best to quadruple recheck everything to see if everything goes well.
 
 ---
 
@@ -105,6 +108,8 @@ This pack comes as **two separate ZIP files**. You need **both** for the full ex
 > *Made for the glory of God and the suffering of every villager trying to sleep in peace... 😭🥹🙏*
 >
 > ## ⚠️ Still in alpha! Bugs, problems and issues of this Hybrid Pack may exist. ⚠️
+>
+> If you want to report.. Make it fully detailed with clarity and gather as much info as possible, because simple requests like: *"It doesn't work when I sleep or when they lie down in bed" will still count"* still counts, we must figure it out why and how in order to mercilessly annihilate this issue to the **shadow realm** with no remorse.
 
 ---
 
