@@ -1,5 +1,5 @@
 # Villager Snoring Meme Sound Effects 💤
-> by Rabbi S. Arlan • Alpha Stage
+> by Rabbi S. Arlan • **Alpha Development Stage**
 
 Adds **5 unhinged meme snoring sounds** to villagers AND players when they sleep at night in Minecraft Java Edition 1.21.x to 26.x
 
@@ -97,7 +97,7 @@ This pack comes as **two separate ZIP files**. You need **both** for the full ex
 |---|---|
 | No sound at all | Check that the Resource Pack is in the **Selected (right) column** and at the **very top** |
 | Resource pack conflict | Move Villager Snoring to the **very top** of selected packs |
-| Gold message didn't appear on `/reload` | Double-check the ZIP is inside `saves/[world]/datapacks/` not `resourcepacks/` |
+| Gold message didn't appear on `/reload` | Double-check the `Villager_Snoring_..._DATAPACK.zip` is inside `saves/[world]/datapacks/` not `resourcepacks/` |
 | Villagers not snoring | Make sure they're fully lying down in beds, not just standing near them |
 | Only snores once per night | Install the Datapack too — the RP alone only triggers once when lying down |
 
@@ -105,8 +105,8 @@ This pack comes as **two separate ZIP files**. You need **both** for the full ex
 
 > *Made for the glory of God and the suffering of every villager trying to sleep in peace... 😭🥹🙏*
 >
-> ## ⚠️ Still in alpha! Bugs may exist. ⚠️
->
+> ## ⚠️ Still in *Alpha Development Stage!* Bugs may exist. ⚠️
+> 
 > 🗣️📢‼️ Report them in the *Issues* Tab on the Repository!
 >
 > Make it very detailed — **when, where, what, why, how, and who** — so we can mercilessly annihilate the issue to the shadow realm with no remorse and no problem. Simple reports like *"It doesn't work when I sleep or when my slaves lie down in bed!!!👿️💢️😫️ May you pwease~~ fix it~~!!!👉️👈️🥺️ OwO"* still count, we'll figure it out together.
