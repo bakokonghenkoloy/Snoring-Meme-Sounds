@@ -20,13 +20,13 @@ This project includes TWO separate files:
 
 ## The 5 Amazing Bountiful Unhinged Sounds 🔊
 
-| # | Sound | Description of what it sounds like |
-|---|---|---|
-| 1 | snore1.ogg | **AUGHHHH AUGHH** |
-| 2 | snore2.ogg | Mimimimimimimimi |
-| 3 | snore3.ogg | Typical loud meme snoring lmao |
-| 4 | snore4.ogg | Mario sleeping *"Spaghetti.. Ravioli.."* |
-| 5 | snore5.ogg | Let's not talk about the last one 🥲🙏son☠️🥀 |
+| # | Sound | Description of what it sounds like | Link to Video |
+|---|---|---|---|
+| 1 | snore1.ogg | **AUGHHHH AUGHH** | [AUGGHH / AHHHHH sound effect](https://www.youtube.com/watch?v=gft2w1d6gZE) |
+| 2 | snore2.ogg | Mimimimimimimimi | [*Snore* Mimimimimimimi Sound Effect](https://www.youtube.com/watch?v=dNr7nXvntO8) |
+| 3 | snore3.ogg | Typical loud meme snoring lmao | [Cartoon snoring meme sound effect](https://www.youtube.com/watch?v=BxXGI-XnJuU) |
+| 4 | snore4.ogg | Mario sleeping *"Spaghetti.. Ravioli.."* | [Super Mario 64 Sleeping Sound](https://www.youtube.com/watch?v=5QHjDwBl_DU) |
+| 5 | snore5.ogg | Let's not talk about the last one 🥲🙏son☠️🥀 | [Clingy Little Sister Snuck Into Your Bed](https://www.youtube.com/watch?v=aNIzC1RI5e0) |
 
 ---
 
@@ -143,6 +143,19 @@ This pack comes as **two separate ZIP files**. You need **both** for the full ex
 - Moved OGG files from `entity/villager/` → `custom/villager/` path inside the resource pack
 - Eliminates potential path collision with vanilla villager sounds folder *(learned from dissecting [Grok Meme Villagers](https://modrinth.com/resourcepack/grox-meme-villagers) Resource Pack)*
 - Fixed Modrinth upload: DATAPACK.zip now correctly contains actual datapack logic files instead of duplicate
+
+### Alpha v1.2_4 — May 2, 2026
+- Fixed cooldown: 80 ticks → 552 ticks so snore5 (25.6s) always fully plays before next sound fires
+- Added "Villager snores 💤" closed caption subtitle — now shows in subtitles when sound plays
+- Resource Pack menu description now shows rainbow colors + "- Resource Pack" label
+- Datapack world selection now shows "- Datapack" label clearly
+
+### Alpha v1.3 — May 2, 2026
+- CRITICAL FIX: Removed `execute if time` — this invalid command caused snore:tick 
+  to fail loading entirely in all previous versions (zero snoring ever happened from DP)
+- CRITICAL FIX: Changed supported_formats from object {min_inclusive/max_inclusive} 
+  to array [min, max] format — fixes "missing min_format/max_format" error in 26.x
+- Both fixes together make the datapack actually load and function for the first time
 
 ---
 
