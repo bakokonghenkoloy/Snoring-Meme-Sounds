@@ -14,6 +14,9 @@ This project includes TWO separate files:
 > 👉 The Datapack adds continuous snoring + player snoring.
 ### 💡 For the full experience install BOTH.
 
+> And also beware of autoupdating the mod or else it'll mess up all the time.   
+> Just incase, always update manually...
+
 ![Pack Icon](https://cdn.modrinth.com/data/cached_images/53b113259d73cb7d56b77db7b7ace4c7166ff19d_0.webp)
 
 ---
