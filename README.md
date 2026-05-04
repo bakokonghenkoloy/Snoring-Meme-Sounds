@@ -1,7 +1,13 @@
 # 😪️😴️ Villager Snoring Meme Sound Effects 🫩️🥱️💤
-> by Rabbi S. Arlan • **Alpha Development Stage**
+> by Rabbi S. Arlan • **Alpha Development Stage**  
+> Reason why I **made this..?** This Mod named **“[MT Snoring Sounds](https://modrinth.com/mod/snoringsound)”** stopped being updated and ported to newer versions... *(Verisons 1.21.8, 1.21.9, 1.21.10, 1.21.11, 26.1, 26.1.1 and 26.1.2 to be exact in this recent time)*  
+> So I think to myself that maybe Datapack and Resource Pack together would just technically work.  
+> Any use of this **without Credits** or just straight up **copy and steal my work** is kinda okay for me to be honest...  
+> And if you're wondering where this comes from, here it is the link to my **[Mod](https://modrinth.com/datapack/villager-snoring-meme-sound-effects)!**
 
-Adds **5 unhinged meme snoring sounds** to villagers AND players when they sleep at night in Minecraft Java Edition 1.21.x to 26.x
+---
+
+# Adds **5 unhinged meme snoring sounds** to villagers AND players when they sleep at night in Minecraft Java Edition 1.21.x to 26.x
 
 ---
 
@@ -46,17 +52,17 @@ You need **both** for the full experience or else either one of them don't funct
 > **⚠️ The Resource Pack alone gives villagers a snore sound  
 > But doesn't work without the Datapack once when they lie down not making the sound. ‼️**  
 > The Datapack adds continuous snoring every few seconds and also makes YOUR character snore when sleeping.   
-> Both together = full experience.
+> Both together = Full elite tier experience.
 
 > **💡 If something feels broken**   
 > 90% of the time it's because one of the files is either missing or placed in the wrong folder.   
 > Or maybe everything in 1.21.x vs in 26.x where the Resource Pack and Datapack structure to work was widely different.  
-> According to here about [Pack Formats](https://yes.com)  
+> According to here about [Pack Formats](https://minecraft.wiki/w/Pack_format).  
 > And also by the way, do not use `-XX:+UseCompactObjectHeaders` in your JVM args it's completely incompatible according to the Logs. *(I dunno who will put that in their Launchers.)*
 
 ---
 
-## How to Properly Install! 🥰️
+## How to Properly Install! 🥰️ *(For beginners who encountered this lmao)*
 
 ### Step 1 — Resource Pack *(DO THIS FIRST)*
 1. Download `Villager_Snoring_..._RESOURCEPACK.zip` — select **Resource Pack** platform in Downloads
@@ -113,7 +119,7 @@ You need **both** for the full experience or else either one of them don't funct
 >
 > ## ⚠️ Still in *Alpha Development Stage!* Bugs may exist. ⚠️
 >
-> 🗣️📢‼️ Report them in the *Issues* Tab on the Repository!
+> 🗣️📢‼️ Report them in the *Issues* Tab on this Repository!
 >
 > Make it very detailed — **when, where, what, why, how, and who** — so we can mercilessly annihilate the issue to the shadow realm with no remorse and no problem. Simple reports like *"It doesn't work when I sleep😫️ or when my slaves lie down in bed!!!👿️💢️😩️ May you pwease~~ fix it~~!!!👉️👈️🥺️ OwO"* and *"unsa man ning Minecraft Pack bro laina ani oi😫️😩️🙏️ gubot na kaayo ayo lang ug tarong bai🗣️📢️🔥️😩️‼️⚠️💯️🇵🇭️😫️🇵🇭️"* still count, we'll figure it out together.
 
@@ -165,6 +171,17 @@ You need **both** for the full experience or else either one of them don't funct
   to array [min, max] format — fixes "missing min_format/max_format" error in 26.x
 - Both fixes together make the datapack actually load and function for the first time
 
+### Alpha v1.4 — May 4, 2026
+
+> `pack_format` is now the HIGHEST target version.  
+> yourdd to here about **[Pack Formats](https://minecraft.wiki/w/Pack_format).**  
+> Discovered using `-XX:+UseCompactObjectHeaders` in your JVM args makes it incompatible even when it's selected highest above the rest
+
+| ### | RP pack_format | DP pack_format | RP supported_formats | DP supported_formats |
+|---|---|---|---|---|
+| v1.3-alpha | 46 (=1.21.4) | 84 (=26.1.2) | [22, 9999] | [34, 9999] |
+| v1.4-alpha | 61 (=1.21.4) | 101 (=26.1.2) | [48, 9999] *(from 1.21.0)* | [48, 9999] *(from 1.21.0, oh wait it's supposed to be 34 whoops gotta change that later)* |* |
+
 ---
 
-[MIT License](LICENSE)
+[License](LICENSE)
