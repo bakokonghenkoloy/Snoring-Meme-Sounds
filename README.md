@@ -14,8 +14,8 @@ This project includes TWO separate files:
 > 👉 The Datapack adds continuous snoring + player snoring.
 ### 💡 For the full experience install BOTH.
 
-> And also beware of autoupdating the mod or else it'll mess up all the time.   
-> Just incase, always update manually...
+> And also beware of Launchers Autoupdating the Packs or else maybe it'll mess up all the time.  
+> Just incase, always recheck if it's okay to update manually...
 
 ![Pack Icon](https://cdn.modrinth.com/data/cached_images/53b113259d73cb7d56b77db7b7ace4c7166ff19d_0.webp)
 
@@ -27,7 +27,7 @@ This project includes TWO separate files:
 |---|---|---|---|
 | 1 | snore1.ogg | **AUGHHHH AUGHH** | [AUGGHH / AHHHHH sound effect](https://www.youtube.com/watch?v=gft2w1d6gZE) |
 | 2 | snore2.ogg | Mimimimimimimimi | [*Snore* Mimimimimimimi Sound Effect](https://www.youtube.com/watch?v=dNr7nXvntO8) |
-| 3 | snore3.ogg | Typical loud meme snoring lmao | [Cartoon snoring meme sound effect](https://www.youtube.com/watch?v=BxXGI-XnJuU) |
+| 3 | snore3.ogg | Typical loud snoring meme sound lmao | [Cartoon snoring meme sound effect](https://www.youtube.com/watch?v=BxXGI-XnJuU) |
 | 4 | snore4.ogg | Mario sleeping *"Spaghetti.. Ravioli.."* | [Super Mario 64 Sleeping Sound](https://www.youtube.com/watch?v=5QHjDwBl_DU) |
 | 5 | snore5.ogg | Let's not talk about the last one 🥲🙏son☠️🥀 | [Clingy Little Sister Snuck Into Your Bed](https://www.youtube.com/watch?v=aNIzC1RI5e0) |
 
@@ -35,19 +35,24 @@ This project includes TWO separate files:
 
 ## Download
 
-This pack comes as **two separate ZIP files**. You need **both** for the full experience:
+This pack comes as **two separate ZIP files**.    
+You need **both** for the full experience or else either one of them don't function without one another:
 
 | File | What it does |
 |---|---|
 | `Villager_Snoring_..._RESOURCEPACK.zip` | Provides the actual snore audio files |
 | `Villager_Snoring_..._DATAPACK.zip` | Makes villagers snore repeatedly + adds player snoring |
 
-> **⚠️ The Resource Pack alone gives villagers a snore sound only once when they lie down.**
-> The Datapack adds continuous snoring every 4 seconds and also makes YOUR character snore when sleeping.
+> **⚠️ The Resource Pack alone gives villagers a snore sound  
+> But doesn't work without the Datapack once when they lie down not making the sound. ‼️**  
+> The Datapack adds continuous snoring every few seconds and also makes YOUR character snore when sleeping.   
 > Both together = full experience.
 
-> **💡 If something feels broken**
-> 90% of the time it's because one of the files is either missing or placed in the wrong folder.
+> **💡 If something feels broken**   
+> 90% of the time it's because one of the files is either missing or placed in the wrong folder.   
+> Or maybe everything in 1.21.x vs in 26.x where the Resource Pack and Datapack structure to work was widely different.  
+> According to here about [Pack Formats](https://yes.com)  
+> And also by the way, do not use `-XX:+UseCompactObjectHeaders` in your JVM args it's completely incompatible according to the Logs. *(I dunno who will put that in their Launchers.)*
 
 ---
 
@@ -70,7 +75,7 @@ This pack comes as **two separate ZIP files**. You need **both** for the full ex
 2. **Do NOT unzip it**
 3. Move it into your world's folder: `saves/[your world name]/datapacks/`
 4. Open that world and type `/reload` in chat
-5. You should see this gold message: **[Snore Pack v1.2_3-alpha] Loaded!** ← confirms it's active
+5. You should see this gold message: **[Snore Pack v1.4-alpha] Loaded!** ← confirms it's active
 
 ### Step 3 — The Test
 - Find a village, wait for night (or `/time set midnight` in creative)
@@ -99,7 +104,7 @@ This pack comes as **two separate ZIP files**. You need **both** for the full ex
 | Problem | Fix |
 |---|---|
 | No snoring sound at all even for Villagers | Quadruple-check that the Resource Pack is in the **Selected (right) column** and at the **very top** than in the **Available (left) column.** Then make sure they're fully lying down in beds, not just standing near them or you did not install the Datapack and Resource Pack properly |
-| Resource pack conflict | Move Villager Snoring to the **very top** of selected packs and if you have Resource Packs that tells you to set it top first, they're lying to you — just set the Resource Pack on top first. |
+| Resource pack conflict | Move `Villager_Snoring_..._RESOURCEPACK.zip` to the **very top** of selected packs. And if you have other Resource Packs that tells you to set it top first, they're lying to you — just set my Resource Pack on top first to prevent compatibility issues with the Vanilla Minecraft. *(according to my logs it was incompatible)* |
 | Golden message didn't appear on chat after `/reload` | Quadruple-check the `Villager_Snoring_..._DATAPACK.zip` is inside `saves/[world you're currently playing with the datapack]/datapacks/` not `resourcepacks/` |
 
 ---
