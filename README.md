@@ -177,7 +177,7 @@ You need **both** for the full experience or else either one of them don't funct
 - yourdd to here about **[Pack Formats](https://minecraft.wiki/w/Pack_format).**  
 - Discovered using `-XX:+UseCompactObjectHeaders` in your JVM args makes it incompatible even when it's selected highest above the rest
 
-| ### | RP pack_format | DP pack_format | RP supported_formats | DP supported_formats |
+| | RP pack_format | DP pack_format | RP supported_formats | DP supported_formats |
 |---|---|---|---|---|
 | v1.3-alpha | 46 (=1.21.4) | 84 (=26.1.2) | [22, 9999] | [34, 9999] |
 | v1.4-alpha | 61 (=1.21.4) | 101 (=26.1.2) | [48, 9999] *(from 1.21.0)* | [48, 9999] *(from 1.21.0, oh wait it's supposed to be 34 whoops gotta change that later)* |* |
