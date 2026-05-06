@@ -174,7 +174,7 @@ You need **both** for the full experience or else either one of them don't funct
 ### Alpha v1.4 — May 4, 2026
 
 - `pack_format` is now the HIGHEST target version.  
-- yourdd to here about **[Pack Formats](https://minecraft.wiki/w/Pack_format).**  
+- According to here about about **[Pack Formats](https://minecraft.wiki/w/Pack_format).**  
 - Discovered using `-XX:+UseCompactObjectHeaders` in your JVM args makes it incompatible even when it's selected highest above the rest
 
 | | RP pack_format | DP pack_format | RP supported_formats | DP supported_formats |
