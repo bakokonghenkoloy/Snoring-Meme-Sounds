@@ -1,0 +1,3 @@
+scoreboard players set #snore snore_init 1
+tellraw @a [{"text":"[","color":"dark_gray"},{"text":"Snore Pack v1.5-alpha","color":"gold","bold":true},{"text":"]","color":"dark_gray"},{"text":" Loaded! Villagers + Players snore at night! \u2665","color":"yellow"}]
+tellraw @a [{"text":"[","color":"dark_gray"},{"text":"Snore Pack","color":"gold","bold":true},{"text":"]","color":"dark_gray"},{"text":" Run ","color":"white"},{"text":"/function snore:util/test","color":"aqua","clickEvent":{"action":"run_command","value":"/function snore:util/test"}},{"text":" to verify sounds are working!","color":"white"}]
