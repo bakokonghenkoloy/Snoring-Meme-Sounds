@@ -112,7 +112,7 @@ Source: [minecraft.wiki/w/Pack_format](https://minecraft.wiki/w/Pack_format)
 
 **Datapack (world-specific):** Drop ZIP into `saves/[world]/datapacks/` → `/reload`
 
-**Datapack (global, PineconeMC/ElyPrismLauncher):** Drop ZIP into `[instance]/minecraft/datapacks/` → gold message fires when first player joins any world in that instance.
+**Datapack (global, PrismLauncher/PineconeMC etc.):** Drop ZIP into `[instance]/minecraft/datapacks/` → gold message fires when first player joins any world in that instance.
 
 **Verify:** `/function snore:util/test` — meme sound = RP active ✅, vanilla sound = RP not loaded ❌
 
