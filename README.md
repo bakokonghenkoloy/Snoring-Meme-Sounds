@@ -193,20 +193,22 @@ Source: [minecraft.wiki/w/Pack_format](https://minecraft.wiki/w/Pack_format)
 
 
 ### Alpha v1.5 — May 9, 2026
-- CRITICAL: `scoreboard objectives remove` before `add` → `/reload` no longer crashes load
-- CRITICAL: `nbt=!{IsBaby:1b}` replaces `nbt={IsBaby:0b}` → adults without IsBaby tag now detected
-- CRITICAL: `pack_format: 101.1` exact decimal (101 was wrong)
-- CRITICAL: Added `min_format`/`max_format` → 26.x new engine compatibility
-- CRITICAL: Deferred announce via `snore_init` scoreboard → global datapack gold message works
+#### CRITICAL
+- `scoreboard objectives remove` before `add` → `/reload` no longer crashes load
+- `nbt=!{IsBaby:1b}` replaces `nbt={IsBaby:0b}` → adults without IsBaby tag now detected
+- `pack_format: 101.1` exact decimal (101 was wrong)
+- Added `min_format`/`max_format` → 26.x new engine compatibility
+- Deferred announce via `snore_init` scoreboard → global datapack gold message works
 
-- NEW: OGGs moved to `custom/snoring/` (cleaner namespace)
-- NEW: 5 variations per sound (was 3), full 0.75→1.25 range for pitch AND volume
-- NEW: `custom.snoring.baby` sound event for baby villagers (+0.50 pitch)
-- NEW: Modular `play/` + `util/` function separation, zero code duplication
-- NEW: `return 1` in all util functions
-- NEW: Predicates for sleeping detection
-- NEW: `/function snore:util/test` clickable in-game RP verification
-- NEW: Supports both world-specific AND global instance-level datapack placement
+#### NEW
+- OGGs moved to `custom/snoring/` (cleaner namespace)
+- 5 variations per sound (was 3), full 0.75→1.25 range for pitch AND volume
+- `custom.snoring.baby` sound event for baby villagers (+0.50 pitch)
+- `play/` + `util/` function separation, zero code duplication
+- `return 1` in all util functions
+- Predicates for sleeping detection
+- `/function snore:util/test` clickable in-game RP verification
+- Supports both world-specific AND global instance-level datapack placement
 
 ---
 
