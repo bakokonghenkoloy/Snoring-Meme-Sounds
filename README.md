@@ -196,6 +196,7 @@ Even short reports like *"It doesn't work when I sleep 😫"* and *"unsa man nin
 - CRITICAL: `pack_format: 101.1` exact decimal (101 was wrong)
 - CRITICAL: Added `min_format`/`max_format` → 26.x new engine compatibility
 - CRITICAL: Deferred announce via `snore_init` scoreboard → global datapack gold message works
+
 - NEW: OGGs moved to `custom/snoring/` (cleaner namespace)
 - NEW: 5 variations per sound (was 3), full 0.75→1.25 range for pitch AND volume
 - NEW: `custom.snoring.baby` sound event for baby villagers (+0.50 pitch)
