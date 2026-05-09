@@ -1,127 +1,134 @@
 # 😪️😴️ Villager Snoring Meme Sound Effects 🫩️🥱️💤
-> by Rabbi S. Arlan • **Alpha Development Stage**  
-> Reason why I **made this..?** This Mod named **“[MT Snoring Sounds](https://modrinth.com/mod/snoringsound)”** stopped being updated and ported to newer versions... *(Verisons 1.21.8, 1.21.9, 1.21.10, 1.21.11, 26.1, 26.1.1 and 26.1.2 to be exact in this recent time)*  
-> So I think to myself that maybe Datapack and Resource Pack together would just technically work.  
-> Any use of this **without Credits** or just straight up **copy and steal my work** is kinda okay for me to be honest...  
-> And if you're wondering where this comes from, here it is the link to my **[Mod](https://modrinth.com/datapack/villager-snoring-meme-sound-effects)!**
+> by Rabbi S. Arlan • **Alpha Development Stage**
+> Reason why I **made this..?** This Mod named **"[MT Snoring Sounds](https://modrinth.com/mod/snoringsound)"** stopped being updated and ported to newer versions *(1.21.8 through 26.1.2)*.
+> So I figured a Datapack + Resource Pack combo would technically work.
+> **[Download on Modrinth](https://modrinth.com/datapack/villager-snoring-meme-sound-effects)**
 
 ---
 
-# Adds **5 unhinged meme snoring sounds** to villagers AND players when they sleep at night in Minecraft Java Edition 1.21.x to 26.x
+# Adds 5 unhinged meme snoring sounds to villagers AND players — Java Edition 1.21 → 26.1.2
 
 ---
 
-## ⚠️ IMPORTANT:
-This project includes TWO separate files:
-- Resource Pack **(REQUIRED for sounds)**
-- Datapack **(ALSO REQUIRED for it to work)**
+## ⚠️ Two Files Required
+| File | Purpose |
+|---|---|
+| `RESOURCEPACK.zip` | Audio files (OGGs + sounds.json) |
+| `DATAPACK.zip` | Detection logic + continuous snoring + player snoring |
 
-> 👉 You NEED the Resource Pack for ANY sound to work.  
-> 👉 The Datapack adds continuous snoring + player snoring.
-### 💡 For the full experience install BOTH.
-
-> And also beware of Launchers Autoupdating the Packs or else maybe it'll mess up all the time.  
-> Just incase, always recheck if it's okay to update manually...
-
-![Pack Icon](https://cdn.modrinth.com/data/cached_images/53b113259d73cb7d56b77db7b7ace4c7166ff19d_0.webp)
+Neither file works alone. Install both.
 
 ---
 
-## The 5 Amazing Bountiful Unhinged Sounds 🔊
+## The 5 Sounds
 
-| # | Sound | Description of what it sounds like | Link to Video |
+| # | File | Description | Link |
 |---|---|---|---|
-| 1 | snore1.ogg | **AUGHHHH AUGHH** | [AUGGHH / AHHHHH sound effect](https://www.youtube.com/watch?v=gft2w1d6gZE) |
-| 2 | snore2.ogg | Mimimimimimimimi | [*Snore* Mimimimimimimi Sound Effect](https://www.youtube.com/watch?v=dNr7nXvntO8) |
-| 3 | snore3.ogg | Typical loud snoring meme sound lmao | [Cartoon snoring meme sound effect](https://www.youtube.com/watch?v=BxXGI-XnJuU) |
-| 4 | snore4.ogg | Mario sleeping *"Spaghetti.. Ravioli.."* | [Super Mario 64 Sleeping Sound](https://www.youtube.com/watch?v=5QHjDwBl_DU) |
-| 5 | snore5.ogg | Let's not talk about the last one 🥲🙏son☠️🥀 | [Clingy Little Sister Snuck Into Your Bed](https://www.youtube.com/watch?v=aNIzC1RI5e0) |
+| 1 | snore1.ogg | AUGHHHH AUGHH | [AUGGHH / AHHHHH sound effect](https://www.youtube.com/watch?v=gft2w1d6gZE) |
+| 2 | snore2.ogg | Mimimimimimimimi | [Snore Mimimimimi Sound Effect](https://www.youtube.com/watch?v=dNr7nXvntO8) |
+| 3 | snore3.ogg | Cartoon loud snoring | [Cartoon snoring meme sound](https://www.youtube.com/watch?v=BxXGI-XnJuU) |
+| 4 | snore4.ogg | Mario "Spaghetti.. Ravioli.." | [Super Mario 64 Sleeping Sound](https://www.youtube.com/watch?v=5QHjDwBl_DU) |
+| 5 | snore5.ogg | Let's not talk about this one 🥲🙏️son☠️🥀️ | [Clingy Little Sister Snuck Into Your Bed](https://www.youtube.com/watch?v=aNIzC1RI5e0) |
 
 ---
 
-## Download
+## Architecture (Technical)
 
-This pack comes as **two separate ZIP files**.    
-You need **both** for the full experience or else either one of them don't function without one another:
+### Resource Pack
+```
+assets/minecraft/
+  sounds.json              → replaces entity.villager.sleep with 25-entry pool
+                             defines custom.snoring.baby (baby villager event)
+  lang/en_us.json          → subtitle "Villager snores 💤"
+  sounds/custom/snoring/
+    snore1.ogg → snore5.ogg
+```
 
-| File | What it does |
+### Datapack
+```
+data/
+  minecraft/tags/function/
+    load.json    → ["snore:core/load"]
+    tick.json    → ["snore:core/tick"]
+  snore/
+    function/
+      core/
+        load.mcfunction    → scoreboard init (remove→add prevents /reload crash)
+                             sets snore_init=0 for deferred announce
+        tick.mcfunction    → cooldown tick, is_snoring tag management,
+                             dispatches to play/, deferred announce check
+      play/
+        villager_adult.mcfunction  → execute nbt=!{IsBaby:1b} adult detection
+        villager_baby.mcfunction   → execute nbt={IsBaby:1b} baby detection
+        player.mcfunction          → execute tag=is_snoring player detection
+      util/
+        sound_adult.mcfunction  → playsound neutral @a[distance=..10] + snore_vcd=552
+        sound_baby.mcfunction   → playsound custom.snoring.baby + snore_vcd=552
+        sound_player.mcfunction → playsound neutral @a[distance=..10] + snore_cd=552
+        announce.mcfunction     → deferred gold tellraw (fires when first player joins)
+        test.mcfunction         → RP verification tool via /function snore:util/test
+    predicates/
+      sleeping_adult.json   → entity_properties Sleeping:1b
+      sleeping_baby.json    → entity_properties Sleeping:1b IsBaby:1b
+      sleeping_player.json  → flags is_sleeping:true
+```
+
+### Scoreboards
+| Name | Used for |
 |---|---|
-| `Villager_Snoring_..._RESOURCEPACK.zip` | Provides the actual snore audio files |
-| `Villager_Snoring_..._DATAPACK.zip` | Makes villagers snore repeatedly + adds player snoring |
+| `snore_cd` | Player cooldown (552 ticks = 27.6s) |
+| `snore_vcd` | Villager cooldown (552 ticks) |
+| `snore_init` | Deferred announce flag (fires once on first player join) |
 
-> **⚠️ The Resource Pack alone gives villagers a snore sound  
-> But doesn't work without the Datapack once when they lie down not making the sound. ‼️**  
-> The Datapack adds continuous snoring every few seconds and also makes YOUR character snore when sleeping.   
-> Both together = Full elite tier experience.
+### Key design decisions
+- `scoreboard objectives remove` BEFORE `add` → safe on every `/reload`
+- `nbt=!{IsBaby:1b}` instead of `nbt={IsBaby:0b}` → adult villagers don't always have IsBaby tag
+- `SleepTimer:1` (int not short `1s`) → correct NBT type for player sleep detection
+- `pack_format: 101.1` (decimal) → exact value required by Minecraft wiki for 26.x
+- `min_format` + `max_format` alongside `supported_formats` → hybrid for both old (1.21.x) and new (26.x) pack engines
+- Deferred announce via `snore_init` scoreboard → works for global instance-level datapacks where `#minecraft:load` fires before any player exists
 
-> **💡 If something feels broken**   
-> 90% of the time it's because one of the files is either missing or placed in the wrong folder.   
-> Or maybe everything in 1.21.x vs in 26.x where the Resource Pack and Datapack structure to work was widely different.  
-> According to here about [Pack Formats](https://minecraft.wiki/w/Pack_format).  
-> And also by the way, do not use `-XX:+UseCompactObjectHeaders` in your JVM args it's completely incompatible according to the Logs. *(I dunno who will put that in their Launchers.)*
+### Pack format compatibility
+| Version | DP format | RP format |
+|---|---|---|
+| 1.21 – 1.21.1 | 48 | 34 |
+| 1.21.2 – 1.21.3 | 57 | 42 |
+| 1.21.4 | 61 | 46 |
+| 1.21.5 | 71 | 55 |
+| 1.21.6 | 80 | 63 |
+| 1.21.7 – 1.21.8 | 81 | 64 |
+| 1.21.9 – 1.21.10 | 88.0 | 69.0 |
+| 1.21.11 | 94.1 | 75 |
+| 26.1 – 26.1.2 | 101.1 | 84.0 |
 
----
-
-## How to Properly Install! 🥰️ *(For beginners who encountered this lmao)*
-
-### Step 1 — Resource Pack *(DO THIS FIRST)*
-1. Download `Villager_Snoring_..._RESOURCEPACK.zip` — select **Resource Pack** platform in Downloads
-2. **Do NOT unzip it**
-3. Move it to: `.minecraft/resourcepacks/`
-   - Windows: `%appdata%\.minecraft\resourcepacks\`
-   - Linux: `~/.minecraft/resourcepacks/`
-   > *Or wherever your launcher's resourcepacks folder is located*
-4. In Minecraft: **Options → Resource Packs**
-5. Find it in the **Available (left column)** → click the **arrow →** to move it to **Selected (right column)**
-6. Drag it to the **very top** of the right column if other resource packs are below it
-7. Click **Done** and wait for Minecraft to refresh
-
-### Step 2 — Datapack *(ALSO REQUIRED)*
-1. Download `Villager_Snoring_..._DATAPACK.zip` — select **Data Pack** platform in Downloads
-2. **Do NOT unzip it**
-3. Move it into your world's folder: `saves/[your world name]/datapacks/`
-4. Open that world and type `/reload` in chat
-5. You should see this gold message: **[Snore Pack v1.4-alpha] Loaded!** ← confirms it's active
-
-### Step 3 — The Test
-- Find a village, wait for night (or `/time set midnight` in creative)
-- Stand within **10 blocks** of a sleeping villager
-- Make sure **Friendly Creatures** volume is at 100% in sound settings
-- Wait up to 4 seconds after villagers lie down
-
-> 🚫 **DO NOT MIX THEM UP:**
-> - Resource Pack → goes in Instance's `resourcepacks/`
-> - Datapack → goes in World's `datapacks/`
->
-> Putting them in the wrong folder = nothing works.
+Source: [minecraft.wiki/w/Pack_format](https://minecraft.wiki/w/Pack_format)
 
 ---
 
-## Supported Versions
+## Install
 
-**Minecraft Java Edition 1.21 → 26.1.2 and beyond**
+**Resource Pack:** Drop ZIP into `[instance]/minecraft/resourcepacks/` → enable in Options → Resource Packs → drag to top of Selected list.
 
-> If the resource pack screen shows a warning like *"made for an older/newer version"* — ignore it and enable it anyway. It still works on all listed versions.
+**Datapack (world-specific):** Drop ZIP into `saves/[world]/datapacks/` → `/reload`
 
----
+**Datapack (global, PineconeMC/ElyPrismLauncher):** Drop ZIP into `[instance]/minecraft/datapacks/` → gold message fires when first player joins any world in that instance.
 
-## Troubleshooting and Debugging
-
-| Problem | Fix |
-|---|---|
-| No snoring sound at all even for Villagers | Quadruple-check that the Resource Pack is in the **Selected (right) column** and at the **very top** than in the **Available (left) column.** Then make sure they're fully lying down in beds, not just standing near them or you did not install the Datapack and Resource Pack properly |
-| Resource pack conflict | Move `Villager_Snoring_..._RESOURCEPACK.zip` to the **very top** of selected packs. And if you have other Resource Packs that tells you to set it top first, they're lying to you — just set my Resource Pack on top first to prevent compatibility issues with the Vanilla Minecraft. *(according to my logs it was incompatible)* |
-| Golden message didn't appear on chat after `/reload` | Quadruple-check the `Villager_Snoring_..._DATAPACK.zip` is inside `saves/[world you're currently playing with the datapack]/datapacks/` not `resourcepacks/` |
+**Verify:** `/function snore:util/test` — meme sound = RP active ✅, vanilla sound = RP not loaded ❌
 
 ---
 
-> *Made for the glory of God and the suffering of every villager trying to sleep in peace... 😭🥹🙏*
->
-> ## ⚠️ Still in *Alpha Development Stage!* Bugs may exist. ⚠️
->
-> 🗣️📢‼️ Report them in the *Issues* Tab on this Repository!
->
-> Make it very detailed — **when, where, what, why, how, and who** — so we can mercilessly annihilate the issue to the shadow realm with no remorse and no problem. Simple reports like *"It doesn't work when I sleep😫️ or when my slaves lie down in bed!!!👿️💢️😩️ May you pwease~~ fix it~~!!!👉️👈️🥺️ OwO"* and *"unsa man ning Minecraft Pack bro laina ani oi😫️😩️🙏️ gubot na kaayo ayo lang ug tarong bai🗣️📢️🔥️😩️‼️⚠️💯️🇵🇭️😫️🇵🇭️"* still count, we'll figure it out together.
+## Reporting Bugs
+
+**Please open an Issue with:**
+- Exact Minecraft version (e.g. 26.1.2, 1.21.11, 1.21)
+- Launcher + Java version
+- Whether you're using global or world-specific datapack
+- Screenshot or paste of chat after `/reload`
+- Output of `/function snore:util/test`
+- Any JVM args you have (especially `-XX:+UseCompactObjectHeaders` — **remove this, it crashes Intel iGPUs**)
+- Any other resource packs or datapacks installed
+
+Even short reports like *"It doesn't work when I sleep 😫"* and *"unsa man ning Minecraft Pack bro laina ani oi 😩🙏🇵🇭"* are welcome — we'll figure it out together. Every report helps.
 
 ---
 
@@ -182,6 +189,24 @@ You need **both** for the full experience or else either one of them don't funct
 | v1.3-alpha | 46 (=1.21.4) | 84 (=26.1.2) | [22, 9999] | [34, 9999] |
 | v1.4-alpha | 61 (=1.21.4) | 101 (=26.1.2) | [48, 9999] *(from 1.21.0)* | [48, 9999] *(from 1.21.0, oh wait it's supposed to be 34 whoops gotta change that later)* |* |
 
+
+### Alpha v1.5 — May 9, 2026
+- CRITICAL: `scoreboard objectives remove` before `add` → `/reload` no longer crashes load
+- CRITICAL: `nbt=!{IsBaby:1b}` replaces `nbt={IsBaby:0b}` → adults without IsBaby tag now detected
+- CRITICAL: `pack_format: 101.1` exact decimal (101 was wrong)
+- CRITICAL: Added `min_format`/`max_format` → 26.x new engine compatibility
+- CRITICAL: Deferred announce via `snore_init` scoreboard → global datapack gold message works
+- NEW: OGGs moved to `custom/snoring/` (cleaner namespace)
+- NEW: 5 variations per sound (was 3), full 0.75→1.25 range for pitch AND volume
+- NEW: `custom.snoring.baby` sound event for baby villagers (+0.50 pitch)
+- NEW: Modular `play/` + `util/` function separation, zero code duplication
+- NEW: `return 1` in all util functions
+- NEW: Predicates for sleeping detection
+- NEW: `/function snore:util/test` clickable in-game RP verification
+- NEW: Supports both world-specific AND global instance-level datapack placement
+
 ---
 
 [MIT LICENSE](LICENSE)
+
+*Made for the glory of God and the suffering of every villager trying to sleep in peace. 😭🥹🙏*
