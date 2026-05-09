@@ -101,6 +101,7 @@ data/
 | 1.21.9 – 1.21.10 | 88.0 | 69.0 | ✅ |
 | 1.21.11 | 94.1 | 75 | ✅ |
 | 26.1 – 26.1.2 | 101.1 | 84.0 | ❔️ |
+
 Source: [minecraft.wiki/w/Pack_format](https://minecraft.wiki/w/Pack_format)
 
 ---
