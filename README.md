@@ -129,7 +129,7 @@ Source: [minecraft.wiki/w/Pack_format](https://minecraft.wiki/w/Pack_format)
 - Any JVM args you have (especially `-XX:+UseCompactObjectHeaders` — **remove this, it crashes Intel iGPUs**)
 - Any other resource packs or datapacks installed
 
-Even short reports like *"It doesn't work when I sleep 😫"* and *"unsa man ning Minecraft Pack bro laina ani oi 😩🙏🇵🇭"* are welcome — we'll figure it out together. Every report helps.
+> Make it very detailed — **when, where, what, why, how, and who** — so we can mercilessly annihilate the issue to the shadow realm with no remorse and no problem. Simple reports like *"It doesn't work when I sleep😫️ or when my slaves lie down in bed!!!👿️💢️😩️ May you pwease~~ fix it~~!!!👉️👈️🥺️ OwO"* and *"unsa man ning Minecraft Pack bro laina ani oi😫️😩️🙏️ gubot na kaayo ayo lang ug tarong bai🗣️📢️🔥️😩️‼️⚠️💯️🇵🇭️😫️🇵🇭️"* still count, we'll figure it out all together. Every single report helps.
 
 ---
 
