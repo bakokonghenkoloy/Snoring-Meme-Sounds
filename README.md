@@ -163,7 +163,6 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 | v1.3-alpha | 46 (=1.21.4) | 84 (=26.1.2) | [22, 9999] | [34, 9999] |
 | v1.4-alpha | 61 (=1.21.4) | 101 (=26.1.2) | [48, 9999] *(from 1.21.0)* | [48, 9999] *(from 1.21.0, oh wait it's supposed to be 34 whoops gotta change that later)* |* |
 
-
 ### Alpha v1.5 — May 9, 2026
 #### CRITICAL
 - `scoreboard objectives remove` before `add` → `/reload` no longer crashes load
@@ -171,7 +170,6 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 - `pack_format: 101.1` exact decimal (101 was wrong)
 - Added `min_format`/`max_format` → 26.x new engine compatibility
 - Deferred announce via `snore_init` scoreboard → global datapack gold message works
-
 #### NEW
 - OGGs moved to `custom/snoring/` (cleaner namespace)
 - 5 variations per sound (was 3), full 0.75→1.25 range for pitch AND volume
@@ -181,6 +179,25 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 - Predicates for sleeping detection
 - `/function snore:util/test` clickable in-game RP verification
 - Supports both world-specific AND global instance-level datapack placement
+
+### Alpha v1.6 — May 9, 2026
+#### Folder Restructure *(OCD Fixed)*
+- `play/villager/adult.mcfunction`   (was play/villager_adult)
+- `play/villager/baby.mcfunction`    (was play/villager_baby)
+- `util/sound/adult.mcfunction`      (was util/sound_adult)
+- `util/sound/baby.mcfunction`       (was util/sound_baby)
+- `util/sound/player.mcfunction`     (was util/sound_player)
+- `util/test/snore1-5.mcfunction`    (NEW — individual tests)
+- `predicates/sleeping/adult.json`   (was predicates/sleeping_adult)
+- `predicates/sleeping/baby.json`
+- `predicates/sleeping/player.json`
+#### New features
+- Stopsound when player wakes up — sounds STOP the moment you get out of bed
+- `was_snoring` tag tracks sleep state for clean wake detection
+- `/function snore:util/debug` — clickable debug panel showing your `snore_cd` score + checklist
+- `/function snore:util/test/snore1` through snore5 — test each sound individually
+- On-load warning: *"⚠ Make sure Simulation Distance ≥ 8 chunks!"*
+- Filipino easter egg subtitle: *"Ah may natutulog! 💤"*
 
 ---
 
