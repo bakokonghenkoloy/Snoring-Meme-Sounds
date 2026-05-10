@@ -90,19 +90,26 @@ data/
 - `min_format` + `max_format` alongside `supported_formats` → hybrid for both old (1.21.x) and new (26.x) pack engines
 - Deferred announce via `snore_init` scoreboard → works for global instance-level datapacks where `#minecraft:load` fires before any player exists — only if you have [Global Packs Mod](https://modrinth.com/mod/globalpacks) installed as an optional dependency or do the manual method.
 
-### Pack Format Compatibility
 
-| Version | DP Format | RP Format | Status |
+## Pack Format Compatibility and Indications
+
+  ✅ -> Perfectly fine  
+  ❔️ -> Perfectly fine without any mods or any tweaks*(i.e.: make it pure Vanilla)*  
+  ❓️ -> Something's off according to me  
+  ‼️ -> **Generally doesn't work** according to launcher, logs, crash texts and profilers
+  🥲️ -> Actually haven't tried
+
+| Version | Datapack Format | Resource Pack Format | Status |
 |---|---|---|---|
-| 1.21 – 1.21.1 | 48 | 34 | ❔️ |
-| 1.21.2 – 1.21.3 | 57 | 42 | ❔️ |
-| 1.21.4 | 61 | 46 | ❔️ |
-| 1.21.5 | 71 | 55 | ❔️ |
-| 1.21.6 | 80 | 63 | ❔️ |
-| 1.21.7 – 1.21.8 | 81 | 64 | ❔️ |
-| 1.21.9 – 1.21.10 | 88.0 | 69.0 | ❔️ |
-| 1.21.11 | 94.1 | 75 | ❔️ |
-| 26.1 – 26.1.2 | 101.1 | 84.0 | ❔️ |
+| 1.21 – 1.21.1 | 48 | 34 | ❓️ |
+| 1.21.2 – 1.21.3 | 57 | 42 | 🥲️ |
+| 1.21.4 | 61 | 46 | 🥲️ |
+| 1.21.5 | 71 | 55 | 🥲️ |
+| 1.21.6 | 80 | 63 | 🥲️ |
+| 1.21.7 – 1.21.8 | 81 | 64 | 🥲️ |
+| 1.21.9 – 1.21.10 | 88.0 | 69.0 | 🥲️ |
+| 1.21.11 | 94.1 | 75.0 | ❓️ |
+| 26.1 – 26.1.2 | 101.1 | 84.0 | ❓️ |
 
 Source: [Minecraft Wiki Pack Formats](https://minecraft.wiki/w/Pack_format)
 
