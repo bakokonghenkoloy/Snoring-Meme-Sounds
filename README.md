@@ -114,24 +114,29 @@ Source: [Minecraft Wiki Pack Formats](https://minecraft.wiki/w/Pack_format)
 
 **Datapack (world-specific):** Drop ZIP into `saves/[world]/datapacks/` → `/reload`
 
-**Datapack (global, PrismLauncher/PineconeMC etc.):** Drop ZIP into `[instance]/minecraft/datapacks/` → gold message fires when first player joins any world in that instance.
+**Datapack (global, PrismLauncher/PineconeMC etc.):**
+- Drop ZIP into `[instance]/minecraft/datapacks/` → gold message fires when first player joins any world in that instance.  
+- if you have **[Global Packs Mod](https://modrinth.com/mod/globalpacks)** installed as an optional dependency or you may do the manual method.
 
-**Verify:** `/function snore:util/test` — meme sound = RP active ✅, vanilla sound = RP not loaded ❌
+**Verify:** `/function snore:util/test`
+- meme sound = RP active ✅
+- sound = RP not loaded ❌
 
 ---
 
 ## Reporting Bugs
 
 **Please open an Issue with:**
-- Exact Minecraft version (e.g. 26.1.2, 1.21.11, 1.21)
+- Exact Minecraft version (e.g. 26.1.2, 1.21.11, 1.21, etc.)
 - Launcher + Java version
 - Whether you're using global or world-specific datapack
 - Screenshot or paste of chat after `/reload`
 - Output of `/function snore:util/test`
 - Any JVM args you have (especially `-XX:+UseCompactObjectHeaders` — **remove this, it crashes Intel iGPUs**)
 - Any other resource packs or datapacks installed
+- And many more whatsoever
 
-> Make it very detailed — **when, where, what, why, how, and who** — so we can mercilessly annihilate the issue to the shadow realm with no remorse and no problem. Simple reports like *"It doesn't work when I sleep😫️ or when my slaves lie down in bed!!!👿️💢️😩️ May you pwease~~ fix it~~!!!👉️👈️🥺️ OwO"*, *"unsa man ning Minecraft Pack bro laina ani oi😫️😩️🙏️ gubot na kaayo ayo lang ug tarong bai🗣️📢️🔥️😩️‼️⚠️💯️🇵🇭️😫️🇵🇭️"* and **[insert alien language scroll here that is literally multiple spans of texts]* still count, we'll figure it out all together. Every single report helps.
+Make it very detailed — **when, where, what, why, how, and who** — so we can mercilessly annihilate the issue to the shadow realm with no remorse and no problem. Simple reports like *"It doesn't work when I sleep😫️ or when my slaves lie down in bed!!!👿️💢️😩️ May you pwease~~ fix it~~!!!👉️👈️🥺️ OwO"*, *"unsa man ning Minecraft Pack bro laina ani oi😫️😩️🙏️ gubot na kaayo ayo lang ug tarong bai🗣️📢️🔥️😩️‼️⚠️💯️🇵🇭️😫️🇵🇭️"* and **[insert alien language scroll here that is literally multiple spans of texts]* still count, we'll figure it out all together. Every single report helps.
 
 ---
 
