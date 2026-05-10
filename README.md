@@ -1,9 +1,10 @@
 # 😪️😴️ Villager Snoring Meme Sound Effects 🫩️🥱️💤
-> by Rabbi S. Arlan • **Alpha Development Stage**
-
-> Reason why I **made this..?** This Mod named **"[MT Snoring Sounds](https://modrinth.com/mod/snoringsound)"** stopped being updated and ported to newer versions *(1.21.8 through 26.1.2)*.
-> So I figured a Datapack + Resource Pack combo would technically work.
+> by Rabbi S. Arlan • **Alpha Development Stage**  
 > **[Download on Modrinth](https://modrinth.com/datapack/villager-snoring-meme-sound-effects)**
+
+> Reason why I **made this..?**  
+> This Mod named **"[MT Snoring Sounds](https://modrinth.com/mod/snoringsound)"** stopped being updated and ported to newer versions *(1.21.8 through 26.1.2)*.  
+> So I figured a Datapack + Resource Pack combo would technically work.  
 
 ---
 
@@ -87,23 +88,23 @@ data/
 - `SleepTimer:1` (int not short `1s`) → correct NBT type for player sleep detection
 - `pack_format: 101.1` (decimal) → exact value required by Minecraft wiki for 26.x
 - `min_format` + `max_format` alongside `supported_formats` → hybrid for both old (1.21.x) and new (26.x) pack engines
-- Deferred announce via `snore_init` scoreboard → works for global instance-level datapacks where `#minecraft:load` fires before any player exists
+- Deferred announce via `snore_init` scoreboard → works for global instance-level datapacks where `#minecraft:load` fires before any player exists only if you have [Global Packs Mod](https://modrinth.com/mod/globalpacks) installed as an optional dependency or do the manual method.
 
 ### Pack Format Compatibility
 
 | Version | DP Format | RP Format | Status |
 |---|---|---|---|
 | 1.21 – 1.21.1 | 48 | 34 | ❔️ |
-| 1.21.2 – 1.21.3 | 57 | 42 | ✅ |
-| 1.21.4 | 61 | 46 | ✅ |
-| 1.21.5 | 71 | 55 | ✅ |
-| 1.21.6 | 80 | 63 | ✅ |
-| 1.21.7 – 1.21.8 | 81 | 64 | ✅ |
-| 1.21.9 – 1.21.10 | 88.0 | 69.0 | ✅ |
+| 1.21.2 – 1.21.3 | 57 | 42 | ❔️ |
+| 1.21.4 | 61 | 46 | ❔️ |
+| 1.21.5 | 71 | 55 | ❔️ |
+| 1.21.6 | 80 | 63 | ❔️ |
+| 1.21.7 – 1.21.8 | 81 | 64 | ❔️ |
+| 1.21.9 – 1.21.10 | 88.0 | 69.0 | ❔️ |
 | 1.21.11 | 94.1 | 75 | ❔️ |
 | 26.1 – 26.1.2 | 101.1 | 84.0 | ❔️ |
 
-Source: [minecraft.wiki/w/Pack_format](https://minecraft.wiki/w/Pack_format)
+Source: [Minecraft Wiki Pack Formats](https://minecraft.wiki/w/Pack_format)
 
 ---
 
@@ -215,3 +216,5 @@ Source: [minecraft.wiki/w/Pack_format](https://minecraft.wiki/w/Pack_format)
 [MIT LICENSE](LICENSE)
 
 *Made for the glory of God and the suffering of every villager trying to sleep in peace. 😭🥹🙏*
+
+Further Information is here in my [Mod](https://modrinth.com/datapack/snoring-meme-sound-effects)
