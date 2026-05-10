@@ -1,0 +1,4 @@
+scoreboard players set #snore snore_init 1
+tellraw @a [{"text":"[","color":"dark_gray"},{"text":"Snore Pack v1.6-alpha","color":"gold","bold":true},{"text":"]","color":"dark_gray"},{"text":" Loaded! Villagers + Players snore at night! \u2665","color":"yellow"}]
+tellraw @a [{"text":"[","color":"dark_gray"},{"text":"Snore Pack","color":"gold","bold":true},{"text":"]","color":"dark_gray"},{"text":" Run ","color":"white"},{"text":"/function snore:util/test","color":"aqua","clickEvent":{"action":"run_command","value":"/function snore:util/test"}},{"text":" to verify sounds!","color":"white"}]
+tellraw @a [{"text":"[","color":"dark_gray"},{"text":"Snore Pack","color":"gold","bold":true},{"text":"]","color":"dark_gray"},{"text":" \u26a0 Make sure Simulation Distance \u2265 8 chunks and stand within 10 blocks of sleeping entity!","color":"yellow"}]
