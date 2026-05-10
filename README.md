@@ -55,7 +55,7 @@ Neither file works alone. Install both.
   ✅ -> Perfectly fine  
   ❔️ -> Perfectly fine without any mods or any tweaks*(i.e.: make it pure Vanilla)*  
   ❓️ -> Something's off according to me  
-  ‼️ -> **Generally doesn't work** according to launcher, logs, crash texts and profilers
+  ‼️ -> **Generally doesn't work** according to launcher, logs, crash texts and profilers  
   🥲️ -> Actually haven't tried
 
 | Version | Datapack Format | Resource Pack Format | Status |
@@ -203,6 +203,6 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 
 [MIT LICENSE](LICENSE)
 
-*Made for the glory of God and the suffering of every villager trying to sleep in peace. 😭🥹🙏*
+*Made for the glory of God and the eternal suffering of every minecraft villager trying to sleep in peace... 😭🥹🙏*
 
 Further Information is here in my [Mod](https://modrinth.com/datapack/snoring-meme-sound-effects)
