@@ -88,7 +88,7 @@ data/
 - `SleepTimer:1` (int not short `1s`) → correct NBT type for player sleep detection
 - `pack_format: 101.1` (decimal) → exact value required by Minecraft wiki for 26.x
 - `min_format` + `max_format` alongside `supported_formats` → hybrid for both old (1.21.x) and new (26.x) pack engines
-- Deferred announce via `snore_init` scoreboard → works for global instance-level datapacks where `#minecraft:load` fires before any player exists only if you have [Global Packs Mod](https://modrinth.com/mod/globalpacks) installed as an optional dependency or do the manual method.
+- Deferred announce via `snore_init` scoreboard → works for global instance-level datapacks where `#minecraft:load` fires before any player exists — only if you have [Global Packs Mod](https://modrinth.com/mod/globalpacks) installed as an optional dependency or do the manual method.
 
 ### Pack Format Compatibility
 
@@ -131,7 +131,7 @@ Source: [Minecraft Wiki Pack Formats](https://minecraft.wiki/w/Pack_format)
 - Any JVM args you have (especially `-XX:+UseCompactObjectHeaders` — **remove this, it crashes Intel iGPUs**)
 - Any other resource packs or datapacks installed
 
-> Make it very detailed — **when, where, what, why, how, and who** — so we can mercilessly annihilate the issue to the shadow realm with no remorse and no problem. Simple reports like *"It doesn't work when I sleep😫️ or when my slaves lie down in bed!!!👿️💢️😩️ May you pwease~~ fix it~~!!!👉️👈️🥺️ OwO"* and *"unsa man ning Minecraft Pack bro laina ani oi😫️😩️🙏️ gubot na kaayo ayo lang ug tarong bai🗣️📢️🔥️😩️‼️⚠️💯️🇵🇭️😫️🇵🇭️"* still count, we'll figure it out all together. Every single report helps.
+> Make it very detailed — **when, where, what, why, how, and who** — so we can mercilessly annihilate the issue to the shadow realm with no remorse and no problem. Simple reports like *"It doesn't work when I sleep😫️ or when my slaves lie down in bed!!!👿️💢️😩️ May you pwease~~ fix it~~!!!👉️👈️🥺️ OwO"*, *"unsa man ning Minecraft Pack bro laina ani oi😫️😩️🙏️ gubot na kaayo ayo lang ug tarong bai🗣️📢️🔥️😩️‼️⚠️💯️🇵🇭️😫️🇵🇭️"* and **[insert alien language scroll here that is literally multiple spans of texts]* still count, we'll figure it out all together. Every single report helps.
 
 ---
 
@@ -175,9 +175,9 @@ Source: [Minecraft Wiki Pack Formats](https://minecraft.wiki/w/Pack_format)
 - Datapack world selection now shows "- Datapack" label clearly
 
 ### Alpha v1.3 — May 2, 2026
-- CRITICAL FIX: Removed `execute if time` — this invalid command caused snore:tick 
+- CRITICAL FIX: Removed `execute if time` — this invalid command caused `snore:tick`  
   to fail loading entirely in all previous versions (zero snoring ever happened from DP)
-- CRITICAL FIX: Changed supported_formats from object {min_inclusive/max_inclusive} 
+- CRITICAL FIX: Changed supported_formats from object {min_inclusive/max_inclusive}  
   to array [min, max] format — fixes "missing min_format/max_format" error in 26.x
 - Both fixes together make the datapack actually load and function for the first time
 
