@@ -34,47 +34,6 @@ Neither file works alone. Install both.
 
 ---
 
-## Architecture (Technical)
-
-### Resource Pack
-```
-assets/minecraft/
-  sounds.json              → replaces entity.villager.sleep with 25-entry pool
-                             defines custom.snoring.baby (baby villager event)
-  lang/en_us.json          → subtitle "Villager snores 💤"
-  sounds/custom/snoring/
-    snore1.ogg → snore5.ogg
-```
-
-### Datapack
-```
-data/
-  minecraft/tags/function/
-    load.json    → ["snore:core/load"]
-    tick.json    → ["snore:core/tick"]
-  snore/
-    function/
-      core/
-        load.mcfunction    → scoreboard init (remove→add prevents /reload crash)
-                             sets snore_init=0 for deferred announce
-        tick.mcfunction    → cooldown tick, is_snoring tag management,
-                             dispatches to play/, deferred announce check
-      play/
-        villager_adult.mcfunction  → execute nbt=!{IsBaby:1b} adult detection
-        villager_baby.mcfunction   → execute nbt={IsBaby:1b} baby detection
-        player.mcfunction          → execute tag=is_snoring player detection
-      util/
-        sound_adult.mcfunction  → playsound neutral @a[distance=..10] + snore_vcd=552
-        sound_baby.mcfunction   → playsound custom.snoring.baby + snore_vcd=552
-        sound_player.mcfunction → playsound neutral @a[distance=..10] + snore_cd=552
-        announce.mcfunction     → deferred gold tellraw (fires when first player joins)
-        test.mcfunction         → RP verification tool via /function snore:util/test
-    predicates/
-      sleeping_adult.json   → entity_properties Sleeping:1b
-      sleeping_baby.json    → entity_properties Sleeping:1b IsBaby:1b
-      sleeping_player.json  → flags is_sleeping:true
-```
-
 ### Scoreboards
 | Name | Used for |
 |---|---|
