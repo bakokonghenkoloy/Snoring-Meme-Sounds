@@ -63,7 +63,7 @@ Neither file works alone. Install both.
   ❓️ -> Questionable 
   ‼️ -> Incompatible  
 
-| Version | Datapack Format | Resource Pack Format | Status |
+| Version | DP Format | RP Format | Status |
 |---|---|---|---|
 | 1.21 – 1.21.1 | 48 | 34 | ❔️ |
 | 1.21.2 – 1.21.3 | 57 | 42 | ❔️ |
