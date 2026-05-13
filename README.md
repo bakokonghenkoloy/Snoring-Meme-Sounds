@@ -91,7 +91,7 @@ Source: [Minecraft Wiki Pack Formats](https://minecraft.wiki/w/Pack_format)
 
 **Verify:** `/function snore:util/test`
 - meme sound = RP active ✅
-- sound = RP not loaded ❌
+- no sound = RP not loaded ❌
 
 ---
 
