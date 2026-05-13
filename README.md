@@ -4,7 +4,8 @@
 
 > Reason why I **made this..?**  
 > This Mod named **"[MT Snoring Sounds](https://modrinth.com/mod/snoringsound)"** stopped being updated and ported to newer versions *(1.21.8 through 26.1.2)*.  
-> So I figured a Datapack + Resource Pack combo would technically work.  
+> So I figured a Datapack + Resource Pack combo would technically work.
+> But there's apparently a [mod](https://modrinth.com/mod/subtle-effects) that does this job!
 
 ---
 
