@@ -153,8 +153,8 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 ### Alpha v1.3 — May 2, 2026
 - CRITICAL FIX: Removed `execute if time` — this invalid command caused `snore:tick`  
   to fail loading entirely in all previous versions (zero snoring ever happened from DP)
-- CRITICAL FIX: Changed supported_formats from object {min_inclusive/max_inclusive}  
-  to array [min, max] format — fixes "missing min_format/max_format" error in 26.x
+- CRITICAL FIX: Changed supported_formats from object `{min_inclusive/max_inclusive}`  
+  to array `[min, max]` format — fixes "missing min_format/max_format" error in 26.x
 - Both fixes together make the datapack actually load and function for the first time
 
 ### Alpha v1.4 — May 4, 2026
