@@ -65,15 +65,15 @@ Neither file works alone. Install both.
 
 | Version | Datapack Format | Resource Pack Format | Status |
 |---|---|---|---|
-| 1.21 – 1.21.1 | 48 | 34 | ❓️ |
+| 1.21 – 1.21.1 | 48 | 34 | ❔️ |
 | 1.21.2 – 1.21.3 | 57 | 42 | 🥲️ |
 | 1.21.4 | 61 | 46 | 🥲️ |
 | 1.21.5 | 71 | 55 | 🥲️ |
 | 1.21.6 | 80 | 63 | 🥲️ |
 | 1.21.7 – 1.21.8 | 81 | 64 | 🥲️ |
 | 1.21.9 – 1.21.10 | 88.0 | 69.0 | 🥲️ |
-| 1.21.11 | 94.1 | 75.0 | ❓️ |
-| 26.1 – 26.1.2 | 101.1 | 84.0 | ❓️ |
+| 1.21.11 | 94.1 | 75.0 | ❔️ |
+| 26.1 – 26.1.2 | 101.1 | 84.0 | ❔️ |
 
 Source: [Minecraft Wiki Pack Formats](https://minecraft.wiki/w/Pack_format)
 
@@ -215,7 +215,7 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 ### Alpha v1.6_2 — May 13, 2026
 #### Official Bug №2 — The thingy or whatever
 - Fixed to `if data entity @s SleepingX` — works on 1.21 through 26.1.2. No planning for overlays needed because it's overkill and more chaotic for my Severe ADHD-C brain to handle lmao. Because of `nbt={Sleeping:1b}` which I'm confused why and so happen to add it in the first place...
-- `nbt={SleepTimer:1}` When server skips ticks when behind (confirmed 42 ticks behind in logs). SleepTimer jumps 0→43, tick 1 never happened, `is_snoring` tag never added, player never snored. Fixed to `SleepTimer:1..` (any value ≥ 1).
+- `nbt={SleepTimer:1}` When server skips ticks when behind (confirmed 42 ticks behind in my logs). SleepTimer jumps 0→43, tick 1 never happened, `is_snoring` tag never added, player never snored. Fixed to `SleepTimer:1..` (any value ≥ 1).
 
 #### What's New?
 - New pack.png applied, baby pitch now +0.75 (was +0.50), Tagalog removed from en_us.json, separate tl_ph.json and ceb_ph.json .
