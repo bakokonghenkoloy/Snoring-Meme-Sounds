@@ -58,9 +58,9 @@ Neither file works alone. Install both.
 
 ## Pack Format Compatibility and Indications
 
-  ✅ -> Compatible  
+  ✅ -> Fully Compatible  
   ❔️ -> Okay-ish  
-  ❓️ -> Questionable 
+  ❓️ -> Questionable  
   ‼️ -> Incompatible  
 
 | Version | DP Format | RP Format | Status |
