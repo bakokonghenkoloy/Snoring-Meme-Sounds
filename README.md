@@ -36,14 +36,14 @@ Neither file works alone. Install both.
 
 ---
 
-### Scoreboards
+### Scoreboard Foundation
 | Name | Used for |
 |---|---|
 | `snore_cd` | Player cooldown (552 ticks = 27.6s) |
 | `snore_vcd` | Villager cooldown (552 ticks) |
 | `snore_init` | Deferred announce flag (fires once on first player join) |
 
-### Key design decisions
+### Key foundation design decisions
 - `scoreboard objectives remove` BEFORE `add` → safe on every `/reload`
 - `nbt=!{IsBaby:1b}` instead of `nbt={IsBaby:0b}` → adult villagers don't always have IsBaby tag
 - `SleepTimer:1` (int not short `1s`) → correct NBT type for player sleep detection
@@ -54,7 +54,7 @@ Neither file works alone. Install both.
 
 ## Pack Format Compatibility and Indications
 
-  ✅ -> Perfectly fine  
+  ✅ -> Perfectly fine *(even with instabilities)*  
   ❔️ -> Perfectly fine without any mods or any tweaks*(i.e.: make it pure Vanilla)*  
   ❓️ -> Something's off according to me  
   ‼️ -> **Generally doesn't work** according to launcher, logs, crash texts and profilers  
