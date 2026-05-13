@@ -9,7 +9,7 @@
 
 ---
 
-# Adds 5 unhinged meme snoring sounds to villagers AND players — Java Edition 1.21 → 26.1.2
+# Adds 7 unhinged meme snoring sounds to villagers AND players — Java Edition 1.21 → 26.1.2
 
 ---
 
