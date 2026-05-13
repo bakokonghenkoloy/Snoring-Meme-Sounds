@@ -26,11 +26,13 @@ Neither file works alone. Install both.
 
 | # | File | Description | Link |
 |---|---|---|---|
-| 1 | snore1.ogg | AUGHHHH AUGHH | [AUGGHH / AHHHHH sound effect](https://www.youtube.com/watch?v=gft2w1d6gZE) |
+| 1 | snore1.ogg | **AUGHHHH AUGHH** | [AUGGHH / AHHHHH sound effect](https://www.youtube.com/watch?v=gft2w1d6gZE) |
 | 2 | snore2.ogg | Mimimimimimimimi | [Snore Mimimimimi Sound Effect](https://www.youtube.com/watch?v=dNr7nXvntO8) |
-| 3 | snore3.ogg | Cartoon loud snoring | [Cartoon snoring meme sound](https://www.youtube.com/watch?v=BxXGI-XnJuU) |
-| 4 | snore4.ogg | Mario "Spaghetti.. Ravioli.." | [Super Mario 64 Sleeping Sound](https://www.youtube.com/watch?v=5QHjDwBl_DU) |
-| 5 | snore5.ogg | Let's not talk about this one 🥲🙏️son☠️🥀️ | [Clingy Little Sister Snuck Into Your Bed](https://www.youtube.com/watch?v=aNIzC1RI5e0) |
+| 3 | snore3.ogg | Typical loud snoring meme | [Cartoon snoring meme sound](https://www.youtube.com/watch?v=BxXGI-XnJuU) |
+| 4 | snore4.ogg | Mario *"Spaghetti.. Ravioli.."* | [Super Mario 64 Sleeping Sound](https://www.youtube.com/watch?v=5QHjDwBl_DU) |
+| 5 | snore5.ogg | Let's not talk about this one 🥲🙏son☠️🥀️ | [Clingy Little Sister Snuck Into Your Bed](https://www.youtube.com/watch?v=aNIzC1RI5e0) |
+| 6 | snore6.ogg | 4 AM in the morning neighbour doing Lawnmower | [AUUGHHH EXTENDED SOUND EFFECT](https://www.youtube.com/watch?v=iqrPmbBSb1Y) |
+| 7 | snore7.ogg | You feel tired? Aight bet!🗣️🔥️😩️😫️ | [Plankton Aughhhhh](https://www.youtube.com/watch?v=_P5vR9pz5Hc) |
 
 ---
 
@@ -102,7 +104,7 @@ Source: [Minecraft Wiki Pack Formats](https://minecraft.wiki/w/Pack_format)
 - Any other resource packs or datapacks installed
 - And many more whatsoever
 
-Make it very detailed — **when, where, what, why, how, and who** — so we can mercilessly annihilate the issue to the shadow realm with no remorse and no problem. Simple reports like *"It doesn't work when I sleep😫️ or when my slaves lie down in bed!!!👿️💢️😩️ May you pwease~~ fix it~~!!!👉️👈️🥺️ OwO"*, *"unsa man ning Minecraft Pack bro laina ani oi😫️😩️🙏️ gubot na kaayo ayo lang ug tarong bai🗣️📢️🔥️😩️‼️⚠️💯️🇵🇭️😫️🇵🇭️"* and **[insert alien language scroll here that is literally multiple spans of texts]* still count, we'll figure it out all together. Every single report helps.
+Make it very detailed — **when, where, what, why, how, and who** — so we can mercilessly annihilate the issue to the shadow realm with no remorse and no problem. Simple reports like *"It doesn't work when I sleep😫️ or when my slaves lie down in bed!!!👿️💢️😩️ May you pwease~~ fix it~~!!!👉️👈️🥺️ OwO"*, *"unsa man ning Minecraft Pack bro laina ani oi😫️😩️🙏️ gubot na kaayo ayo lang ug tarong bai🗣️📢️🔥️😩️‼️⚠️💯️🇵🇭️😫️🇵🇭️"* and **[insert alien language here that's from the other world named "Logs"]* still count, we'll figure it out all together. Every single report helps.
 
 ---
 
@@ -198,6 +200,14 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 - `/function snore:util/test/snore1` through snore5 — test each sound individually
 - On-load warning: *"⚠ Make sure Simulation Distance ≥ 8 chunks!"*
 - Filipino easter egg subtitle: *"Ah may natutulog! 💤"*
+
+### Alpha v1.6_1-alpha
+#### Official Bug №1 — The random snore test bug
+- **(THE ROOT CAUSE)**: `util/test/snore1-5` were all calling `minecraft:entity.villager.sleep` which hits the randomized snore.ogg sounds pool.
+- NOW each `util/test/snoreN` calls its own dedicated `custom.snoring.test.snoreN` event which is a SINGLE-ENTRY in `sounds.json` pointing to EXACTLY that one OGG.
+- Zero randomness. `/function snore:util/test/snore1` = **snore1.ogg**
+#### What's New?
+- Added `snore6.ogg` and `snore7.ogg` because yes.
 
 ---
 
