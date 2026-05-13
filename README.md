@@ -204,13 +204,21 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 - On-load warning: *"⚠ Make sure Simulation Distance ≥ 8 chunks!"*
 - Filipino easter egg subtitle: *"Ah may natutulog! 💤"*
 
-### Alpha v1.6_1-alpha
+### Alpha v1.6_1 — May 12, 2026
 #### Official Bug №1 — The random snore test bug
 - **(THE ROOT CAUSE)**: `util/test/snore1-5` were all calling `minecraft:entity.villager.sleep` which hits the randomized snore.ogg sounds pool.
 - NOW each `util/test/snoreN` calls its own dedicated `custom.snoring.test.snoreN` event which is a SINGLE-ENTRY in `sounds.json` pointing to EXACTLY that one OGG.
 - Zero randomness. `/function snore:util/test/snore1` = **snore1.ogg**
 #### What's New?
 - Added `snore6.ogg` and `snore7.ogg` because yes.
+
+### Alpha v1.6_2 — May 13, 2026
+#### Official Bug №2 — The thingy or whatever
+- Fixed to `if data entity @s SleepingX` — works on 1.21 through 26.1.2. No planning for overlays needed because it's overkill and more chaotic for my Severe ADHD-C brain to handle lmao. Because of `nbt={Sleeping:1b}` which I'm confused why and so happen to add it in the first place...
+- `nbt={SleepTimer:1}` When server skips ticks when behind (confirmed 42 ticks behind in logs). SleepTimer jumps 0→43, tick 1 never happened, `is_snoring` tag never added, player never snored. Fixed to `SleepTimer:1..` (any value ≥ 1).
+
+#### What's New?
+- New pack.png applied, baby pitch now +0.75 (was +0.50), Tagalog removed from en_us.json, separate tl_ph.json and ceb_ph.json .
 
 ---
 
