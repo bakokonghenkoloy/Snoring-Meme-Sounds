@@ -214,7 +214,7 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 
 ### Alpha v1.6_2 — May 13, 2026
 #### Official Bug №2 — The thingy or whatever
-- Fixed to `if data entity @s SleepingX` — works on 1.21 through 26.1.2. No planning for overlays needed because it's overkill and more chaotic for my Severe ADHD-C brain to handle lmao. Because of `nbt={Sleeping:1b}` which I'm confused why and so happen to add it in the first place...
+- Fixed to `if data entity @s SleepingX` — works on 1.21 through 26.1.2. No planning for overlays needed because it's overkill and more chaotic for my Severe ADHD-C brain to handle lmao. Because of `nbt={Sleeping:1b}` which might be the root and cause of all problems I think.
 - `nbt={SleepTimer:1}` When server skips ticks when behind (confirmed 42 ticks behind in my logs). SleepTimer jumps 0→43, tick 1 never happened, `is_snoring` tag never added, player never snored. Fixed to `SleepTimer:1..` (any value ≥ 1).
 
 #### What's New?
