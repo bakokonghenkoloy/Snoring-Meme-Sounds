@@ -1,0 +1,4 @@
+scoreboard players set #snore snore_init 1
+tellraw @a [{"text":"[","color":"dark_gray"},{"text":"Snore Pack v1.6_1-alpha","color":"gold","bold":true},{"text":"]","color":"dark_gray"},{"text":" Loaded! 7 meme snores — Villagers + Players! \u2665","color":"yellow"}]
+tellraw @a [{"text":"[","color":"dark_gray"},{"text":"Snore Pack","color":"gold","bold":true},{"text":"]","color":"dark_gray"},{"text":" Run ","color":"white"},{"text":"/function snore:util/test","color":"aqua","clickEvent":{"action":"run_command","value":"/function snore:util/test"}},{"text":" to test all 7 sounds!","color":"white"}]
+tellraw @a [{"text":"[","color":"dark_gray"},{"text":"Snore Pack","color":"gold","bold":true},{"text":"]","color":"dark_gray"},{"text":" \u26a0 Sim Distance \u2265 8 chunks + stand within 10 blocks of sleeping entity!","color":"yellow"}]

@@ -1,0 +1,503 @@
+{
+  "entity.villager.sleep": {
+    "replace": true,
+    "subtitle": "subtitles.entity.villager.sleep",
+    "sounds": [
+      {
+        "name": "custom/snoring/snore1",
+        "weight": 3,
+        "volume": 1.0,
+        "pitch": 1.0
+      },
+      {
+        "name": "custom/snoring/snore1",
+        "weight": 2,
+        "volume": 0.75,
+        "pitch": 0.75
+      },
+      {
+        "name": "custom/snoring/snore1",
+        "weight": 2,
+        "volume": 0.9,
+        "pitch": 0.875
+      },
+      {
+        "name": "custom/snoring/snore1",
+        "weight": 2,
+        "volume": 1.1,
+        "pitch": 1.125
+      },
+      {
+        "name": "custom/snoring/snore1",
+        "weight": 2,
+        "volume": 1.25,
+        "pitch": 1.25
+      },
+      {
+        "name": "custom/snoring/snore2",
+        "weight": 3,
+        "volume": 1.0,
+        "pitch": 1.0
+      },
+      {
+        "name": "custom/snoring/snore2",
+        "weight": 2,
+        "volume": 0.75,
+        "pitch": 0.75
+      },
+      {
+        "name": "custom/snoring/snore2",
+        "weight": 2,
+        "volume": 0.9,
+        "pitch": 0.875
+      },
+      {
+        "name": "custom/snoring/snore2",
+        "weight": 2,
+        "volume": 1.1,
+        "pitch": 1.125
+      },
+      {
+        "name": "custom/snoring/snore2",
+        "weight": 2,
+        "volume": 1.25,
+        "pitch": 1.25
+      },
+      {
+        "name": "custom/snoring/snore3",
+        "weight": 3,
+        "volume": 1.0,
+        "pitch": 1.0
+      },
+      {
+        "name": "custom/snoring/snore3",
+        "weight": 2,
+        "volume": 0.75,
+        "pitch": 0.75
+      },
+      {
+        "name": "custom/snoring/snore3",
+        "weight": 2,
+        "volume": 0.9,
+        "pitch": 0.875
+      },
+      {
+        "name": "custom/snoring/snore3",
+        "weight": 2,
+        "volume": 1.1,
+        "pitch": 1.125
+      },
+      {
+        "name": "custom/snoring/snore3",
+        "weight": 2,
+        "volume": 1.25,
+        "pitch": 1.25
+      },
+      {
+        "name": "custom/snoring/snore4",
+        "weight": 2,
+        "volume": 1.0,
+        "pitch": 1.0
+      },
+      {
+        "name": "custom/snoring/snore4",
+        "weight": 2,
+        "volume": 0.75,
+        "pitch": 0.75
+      },
+      {
+        "name": "custom/snoring/snore4",
+        "weight": 2,
+        "volume": 0.9,
+        "pitch": 0.875
+      },
+      {
+        "name": "custom/snoring/snore4",
+        "weight": 2,
+        "volume": 1.1,
+        "pitch": 1.125
+      },
+      {
+        "name": "custom/snoring/snore4",
+        "weight": 2,
+        "volume": 1.25,
+        "pitch": 1.25
+      },
+      {
+        "name": "custom/snoring/snore5",
+        "weight": 2,
+        "volume": 1.0,
+        "pitch": 1.0
+      },
+      {
+        "name": "custom/snoring/snore5",
+        "weight": 2,
+        "volume": 0.75,
+        "pitch": 0.75
+      },
+      {
+        "name": "custom/snoring/snore5",
+        "weight": 2,
+        "volume": 0.9,
+        "pitch": 0.875
+      },
+      {
+        "name": "custom/snoring/snore5",
+        "weight": 2,
+        "volume": 1.1,
+        "pitch": 1.125
+      },
+      {
+        "name": "custom/snoring/snore5",
+        "weight": 2,
+        "volume": 1.25,
+        "pitch": 1.25
+      },
+      {
+        "name": "custom/snoring/snore6",
+        "weight": 2,
+        "volume": 1.0,
+        "pitch": 1.0
+      },
+      {
+        "name": "custom/snoring/snore6",
+        "weight": 2,
+        "volume": 0.75,
+        "pitch": 0.75
+      },
+      {
+        "name": "custom/snoring/snore6",
+        "weight": 2,
+        "volume": 0.9,
+        "pitch": 0.875
+      },
+      {
+        "name": "custom/snoring/snore6",
+        "weight": 2,
+        "volume": 1.1,
+        "pitch": 1.125
+      },
+      {
+        "name": "custom/snoring/snore6",
+        "weight": 2,
+        "volume": 1.25,
+        "pitch": 1.25
+      },
+      {
+        "name": "custom/snoring/snore7",
+        "weight": 2,
+        "volume": 1.0,
+        "pitch": 1.0
+      },
+      {
+        "name": "custom/snoring/snore7",
+        "weight": 2,
+        "volume": 0.75,
+        "pitch": 0.75
+      },
+      {
+        "name": "custom/snoring/snore7",
+        "weight": 2,
+        "volume": 0.9,
+        "pitch": 0.875
+      },
+      {
+        "name": "custom/snoring/snore7",
+        "weight": 2,
+        "volume": 1.1,
+        "pitch": 1.125
+      },
+      {
+        "name": "custom/snoring/snore7",
+        "weight": 2,
+        "volume": 1.25,
+        "pitch": 1.25
+      }
+    ]
+  },
+  "custom.snoring.baby": {
+    "subtitle": "subtitles.entity.villager.sleep",
+    "sounds": [
+      {
+        "name": "custom/snoring/snore1",
+        "weight": 3,
+        "volume": 1.0,
+        "pitch": 1.75
+      },
+      {
+        "name": "custom/snoring/snore1",
+        "weight": 2,
+        "volume": 0.75,
+        "pitch": 1.5
+      },
+      {
+        "name": "custom/snoring/snore1",
+        "weight": 2,
+        "volume": 0.9,
+        "pitch": 1.625
+      },
+      {
+        "name": "custom/snoring/snore1",
+        "weight": 2,
+        "volume": 1.1,
+        "pitch": 1.875
+      },
+      {
+        "name": "custom/snoring/snore1",
+        "weight": 2,
+        "volume": 1.25,
+        "pitch": 2.0
+      },
+      {
+        "name": "custom/snoring/snore2",
+        "weight": 3,
+        "volume": 1.0,
+        "pitch": 1.75
+      },
+      {
+        "name": "custom/snoring/snore2",
+        "weight": 2,
+        "volume": 0.75,
+        "pitch": 1.5
+      },
+      {
+        "name": "custom/snoring/snore2",
+        "weight": 2,
+        "volume": 0.9,
+        "pitch": 1.625
+      },
+      {
+        "name": "custom/snoring/snore2",
+        "weight": 2,
+        "volume": 1.1,
+        "pitch": 1.875
+      },
+      {
+        "name": "custom/snoring/snore2",
+        "weight": 2,
+        "volume": 1.25,
+        "pitch": 2.0
+      },
+      {
+        "name": "custom/snoring/snore3",
+        "weight": 3,
+        "volume": 1.0,
+        "pitch": 1.75
+      },
+      {
+        "name": "custom/snoring/snore3",
+        "weight": 2,
+        "volume": 0.75,
+        "pitch": 1.5
+      },
+      {
+        "name": "custom/snoring/snore3",
+        "weight": 2,
+        "volume": 0.9,
+        "pitch": 1.625
+      },
+      {
+        "name": "custom/snoring/snore3",
+        "weight": 2,
+        "volume": 1.1,
+        "pitch": 1.875
+      },
+      {
+        "name": "custom/snoring/snore3",
+        "weight": 2,
+        "volume": 1.25,
+        "pitch": 2.0
+      },
+      {
+        "name": "custom/snoring/snore4",
+        "weight": 2,
+        "volume": 1.0,
+        "pitch": 1.75
+      },
+      {
+        "name": "custom/snoring/snore4",
+        "weight": 2,
+        "volume": 0.75,
+        "pitch": 1.5
+      },
+      {
+        "name": "custom/snoring/snore4",
+        "weight": 2,
+        "volume": 0.9,
+        "pitch": 1.625
+      },
+      {
+        "name": "custom/snoring/snore4",
+        "weight": 2,
+        "volume": 1.1,
+        "pitch": 1.875
+      },
+      {
+        "name": "custom/snoring/snore4",
+        "weight": 2,
+        "volume": 1.25,
+        "pitch": 2.0
+      },
+      {
+        "name": "custom/snoring/snore5",
+        "weight": 2,
+        "volume": 1.0,
+        "pitch": 1.75
+      },
+      {
+        "name": "custom/snoring/snore5",
+        "weight": 2,
+        "volume": 0.75,
+        "pitch": 1.5
+      },
+      {
+        "name": "custom/snoring/snore5",
+        "weight": 2,
+        "volume": 0.9,
+        "pitch": 1.625
+      },
+      {
+        "name": "custom/snoring/snore5",
+        "weight": 2,
+        "volume": 1.1,
+        "pitch": 1.875
+      },
+      {
+        "name": "custom/snoring/snore5",
+        "weight": 2,
+        "volume": 1.25,
+        "pitch": 2.0
+      },
+      {
+        "name": "custom/snoring/snore6",
+        "weight": 2,
+        "volume": 1.0,
+        "pitch": 1.75
+      },
+      {
+        "name": "custom/snoring/snore6",
+        "weight": 2,
+        "volume": 0.75,
+        "pitch": 1.5
+      },
+      {
+        "name": "custom/snoring/snore6",
+        "weight": 2,
+        "volume": 0.9,
+        "pitch": 1.625
+      },
+      {
+        "name": "custom/snoring/snore6",
+        "weight": 2,
+        "volume": 1.1,
+        "pitch": 1.875
+      },
+      {
+        "name": "custom/snoring/snore6",
+        "weight": 2,
+        "volume": 1.25,
+        "pitch": 2.0
+      },
+      {
+        "name": "custom/snoring/snore7",
+        "weight": 2,
+        "volume": 1.0,
+        "pitch": 1.75
+      },
+      {
+        "name": "custom/snoring/snore7",
+        "weight": 2,
+        "volume": 0.75,
+        "pitch": 1.5
+      },
+      {
+        "name": "custom/snoring/snore7",
+        "weight": 2,
+        "volume": 0.9,
+        "pitch": 1.625
+      },
+      {
+        "name": "custom/snoring/snore7",
+        "weight": 2,
+        "volume": 1.1,
+        "pitch": 1.875
+      },
+      {
+        "name": "custom/snoring/snore7",
+        "weight": 2,
+        "volume": 1.25,
+        "pitch": 2.0
+      }
+    ]
+  },
+  "custom.snoring.test.snore1": {
+    "subtitle": "subtitles.custom.snoring.test",
+    "sounds": [
+      {
+        "name": "custom/snoring/snore1",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "custom.snoring.test.snore2": {
+    "subtitle": "subtitles.custom.snoring.test",
+    "sounds": [
+      {
+        "name": "custom/snoring/snore2",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "custom.snoring.test.snore3": {
+    "subtitle": "subtitles.custom.snoring.test",
+    "sounds": [
+      {
+        "name": "custom/snoring/snore3",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "custom.snoring.test.snore4": {
+    "subtitle": "subtitles.custom.snoring.test",
+    "sounds": [
+      {
+        "name": "custom/snoring/snore4",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "custom.snoring.test.snore5": {
+    "subtitle": "subtitles.custom.snoring.test",
+    "sounds": [
+      {
+        "name": "custom/snoring/snore5",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "custom.snoring.test.snore6": {
+    "subtitle": "subtitles.custom.snoring.test",
+    "sounds": [
+      {
+        "name": "custom/snoring/snore6",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "custom.snoring.test.snore7": {
+    "subtitle": "subtitles.custom.snoring.test",
+    "sounds": [
+      {
+        "name": "custom/snoring/snore7",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  }
+}
