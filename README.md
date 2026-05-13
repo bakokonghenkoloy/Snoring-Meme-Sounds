@@ -222,7 +222,7 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 
 ### Alpha v1.6_3 — May 13, 2026
 - Added a Rainbow announce message (★ S-n-o-r-e P-a-c-k ★ in red-gold-yellow-green-aqua-blue-purple), version string corrected, predicate dead code cleaned up.
-- Made the other Rainbow plain red to see if it looks good or not at all.
+- Forgot to say made the other Rainbow plain red to see if it looks good or not at all.
 
 ---
 
