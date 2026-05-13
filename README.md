@@ -22,17 +22,20 @@ Neither file works alone. Install both.
 
 ---
 
-## The 5 Sounds
+## The 7 Sounds
 
 | # | File | Description | Link |
 |---|---|---|---|
 | 1 | snore1.ogg | **AUGHHHH AUGHH** | [AUGGHH / AHHHHH sound effect](https://www.youtube.com/watch?v=gft2w1d6gZE) |
 | 2 | snore2.ogg | Mimimimimimimimi | [Snore Mimimimimi Sound Effect](https://www.youtube.com/watch?v=dNr7nXvntO8) |
-| 3 | snore3.ogg | Typical loud snoring meme | [Cartoon snoring meme sound](https://www.youtube.com/watch?v=BxXGI-XnJuU) |
-| 4 | snore4.ogg | Mario *"Spaghetti.. Ravioli.."* | [Super Mario 64 Sleeping Sound](https://www.youtube.com/watch?v=5QHjDwBl_DU) |
+| 3 | snore3.ogg | Typical loud cartoon snoring meme sound lmao! | [Cartoon snoring meme sound](https://www.youtube.com/watch?v=BxXGI-XnJuU) |
+| 4 | snore4.ogg | Mario: *"Spaghetti... Ravioli.."* | [Super Mario 64 Sleeping Sound](https://www.youtube.com/watch?v=5QHjDwBl_DU) |
 | 5 | snore5.ogg | Let's not talk about this one 🥲🙏son☠️🥀️ | [Clingy Little Sister Snuck Into Your Bed](https://www.youtube.com/watch?v=aNIzC1RI5e0) |
 | 6 | snore6.ogg | 4 AM in the morning neighbour doing Lawnmower | [AUUGHHH EXTENDED SOUND EFFECT](https://www.youtube.com/watch?v=iqrPmbBSb1Y) |
 | 7 | snore7.ogg | You feel tired? Aight bet!🗣️🔥️😩️😫️ | [Plankton Aughhhhh](https://www.youtube.com/watch?v=_P5vR9pz5Hc) |
+| 8 | snore8.ogg | Average sleeping sound *(Coming soon in v1.7-alpha)* | [Snoring - sound effect](https://www.youtube.com/watch?v=3eqcIC5Plzw) |
+| 9 | | *(Coming soon in v1.7-alpha)* | |
+| 10 | | *(Coming soon in v1.7-alpha as the last added sound)* | |
 
 ---
 
