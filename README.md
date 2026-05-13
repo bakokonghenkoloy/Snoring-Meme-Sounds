@@ -220,6 +220,10 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 #### What's New?
 - New pack.png applied, baby pitch now +0.75 (was +0.50), Tagalog removed from en_us.json, separate tl_ph.json and ceb_ph.json .
 
+### Alpha v1.6_3 — May 13, 2026
+- Added a Rainbow announce message (★ S-n-o-r-e P-a-c-k ★ in red-gold-yellow-green-aqua-blue-purple), version string corrected, predicate dead code cleaned up.
+- Made the other Rainbow plain red to see if it looks good or not at all.
+
 ---
 
 [MIT LICENSE](LICENSE)
