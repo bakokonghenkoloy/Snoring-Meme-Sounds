@@ -230,6 +230,7 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 #### What's New?
 - Also confirmed the baby villager noises will go from 0.75 -> 1.25 volumes to 0.5 -> 1.0 volume range variations
 - Came back to the original pack.png icon and returned the rainbow descriptions of packs.
+- Added `snore8.ogg`
 
 ---
 
