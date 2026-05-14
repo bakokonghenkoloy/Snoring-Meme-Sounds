@@ -43,8 +43,8 @@ Neither file works alone. Install both.
 ### Scoreboard Foundation
 | Name | Used for |
 |---|---|
-| `snore_cd` | Player cooldown (552 ticks = 27.6s) |
-| `snore_vcd` | Villager cooldown (552 ticks) |
+| `snore_cd` | Player cooldown |
+| `snore_vcd` | Villager cooldown |
 | `snore_init` | Deferred announce flag (fires once on first player join) |
 
 ### Key foundation design decisions
