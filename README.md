@@ -232,6 +232,7 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 - Came back to the original pack.png icon and returned the rainbow descriptions of packs.
 - Added `snore8.ogg`
 - Forgot to say added reverb and fade-out effect to all sounds that cut-off
+- More asynchronized and natural making of noise
 
 ---
 
