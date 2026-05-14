@@ -72,8 +72,8 @@ Neither file works alone. Install both.
 | 1.21.6 | 80 | 63 | ❓️ |
 | 1.21.7 – 1.21.8 | 81 | 64 | ❓️ |
 | 1.21.9 – 1.21.10 | 88.0 | 69.0 | ❓️ |
-| 1.21.11 | 94.1 | 75.0 | ❓️ |
-| 26.1 – 26.1.2 | 101.1 | 84.0 | ❓️ |
+| 1.21.11 | 94.1 | 75.0 | ‼️ |
+| 26.1 – 26.1.2 | 101.1 | 84.0 | ‼️ |
 
 Source: [Minecraft Wiki Pack Formats](https://minecraft.wiki/w/Pack_format)
 
