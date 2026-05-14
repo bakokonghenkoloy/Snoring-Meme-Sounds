@@ -224,6 +224,13 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 - Added a Rainbow announce message (★ S-n-o-r-e P-a-c-k ★ in red-gold-yellow-green-aqua-blue-purple), version string corrected, predicate dead code cleaned up.
 - Forgot to say made the other Rainbow plain red to see if it looks good or not at all.
 
+### Alpha v1.6_4 — May 14, 2026
+#### Official Bug №3 - The red error warning
+- `pack_format: 84` in the RP. In 1.21.1 (which expects format 34), the game saw `pack_format: 84`, and even with `supported_formats: [34, 9999]`, some 1.21.x engine versions don't fully respect the supported_formats override when pack_format is THAT far off. Now fixed to `pack_format: 34` (the actual minimum). `supported_formats: [34, 9999]` covers everything from 1.21 through 26.x and future versions. Same logic for DP: `pack_format: 48`.
+#### What's New?
+- Also confirmed the baby villager noises will go from 0.75 -> 1.25 volumes to 0.5 -> 1.0 volume range variations
+- Came back to the original pack.png icon and returned the rainbow descriptions of packs.
+
 ---
 
 [MIT LICENSE](LICENSE)
