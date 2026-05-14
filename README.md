@@ -1,5 +1,5 @@
 # 😪️😴️ Villager Snoring Meme Sound Effects 🫩️🥱️💤
-> by BakokongHenkoloy • **Alpha Development Stage**  
+> by BakokongHenkoloy • **Developing this Mod in Alpha Development Stage**  
 > **[Download on Modrinth](https://modrinth.com/datapack/villager-snoring-meme-sound-effects)**
 
 > Reason why I **made this..?**  
