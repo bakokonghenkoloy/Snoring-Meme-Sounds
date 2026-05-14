@@ -240,6 +240,9 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 - Forgot to say added reverb and fade-out effect to all sounds that cut-off
 - More asynchronized and naturally making noise
 
+### Alpha v1.6_5 — May 14, 2026
+- Minor bug fixes and descriptions rewriting
+
 ---
 
 [MIT LICENSE](LICENSE)
