@@ -9,7 +9,7 @@
 
 ---
 
-# Adds 7 unhinged meme snoring sounds to villagers AND players — Java Edition 1.21 → 26.1.2
+# Adds 8 unhinged meme snoring sounds to villagers AND players — Java Edition 1.21 → 26.1.2
 
 ---
 
@@ -23,7 +23,7 @@ Neither file works alone. Install both.
 
 ---
 
-## The 7 Sounds
+## The 8 Sounds
 
 | # | File | Description | Link |
 |---|---|---|---|
@@ -34,7 +34,7 @@ Neither file works alone. Install both.
 | 5 | snore5.ogg | Let's not talk about this one 🥲🙏son☠️🥀️ | [Clingy Little Sister Snuck Into Your Bed](https://www.youtube.com/watch?v=aNIzC1RI5e0) |
 | 6 | snore6.ogg | 4 AM in the morning neighbour using Lawnmower | [AUUGHHH EXTENDED SOUND EFFECT](https://www.youtube.com/watch?v=iqrPmbBSb1Y) |
 | 7 | snore7.ogg | You feel tired? Aight bet!🗣️🔥️😩️😫️ | [Plankton Aughhhhh](https://www.youtube.com/watch?v=_P5vR9pz5Hc) |
-| 8 | snore8.ogg | Average snoring sound *(Coming soon in v1.7-alpha)* | [Snoring - sound effect](https://www.youtube.com/watch?v=3eqcIC5Plzw) |
+| 8 | snore8.ogg | Average snoring sound | [Snoring - sound effect](https://www.youtube.com/watch?v=3eqcIC5Plzw) |
 | 9 | | *(Coming soon in v1.7-alpha)* | |
 | 10 | | *(Coming soon in v1.7-alpha as the last added sound)* | |
 
@@ -65,13 +65,13 @@ Neither file works alone. Install both.
 
 | Version | DP Format | RP Format | Status |
 |---|---|---|---|
-| 1.21 – 1.21.1 | 48 | 34 | ❔️ |
-| 1.21.2 – 1.21.3 | 57 | 42 | ❔️ |
-| 1.21.4 | 61 | 46 | ❔️ |
-| 1.21.5 | 71 | 55 | ❔️ |
-| 1.21.6 | 80 | 63 | ❔️ |
-| 1.21.7 – 1.21.8 | 81 | 64 | ❔️ |
-| 1.21.9 – 1.21.10 | 88.0 | 69.0 | ❔️ |
+| 1.21 – 1.21.1 | 48 | 34 | ❓️ |
+| 1.21.2 – 1.21.3 | 57 | 42 | ❓️ |
+| 1.21.4 | 61 | 46 | ❓️ |
+| 1.21.5 | 71 | 55 | ❓️ |
+| 1.21.6 | 80 | 63 | ❓️ |
+| 1.21.7 – 1.21.8 | 81 | 64 | ❓️ |
+| 1.21.9 – 1.21.10 | 88.0 | 69.0 | ❓️ |
 | 1.21.11 | 94.1 | 75.0 | ❓️ |
 | 26.1 – 26.1.2 | 101.1 | 84.0 | ❓️ |
 
