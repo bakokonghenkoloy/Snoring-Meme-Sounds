@@ -1,0 +1,6 @@
+tellraw @s [{"text":"[","color":"dark_gray"},{"text":"Snore Debug","color":"gold","bold":true},{"text":"]","color":"dark_gray"},{"text":" Your snore_cd: ","color":"white"},{"score":{"name":"@s","objective":"snore_cd"}}]
+tellraw @s [{"text":"[","color":"dark_gray"},{"text":"Snore Debug","color":"gold","bold":true},{"text":"]","color":"dark_gray"},{"text":" is_snoring tag: ","color":"white"},{"text":"(run: ","color":"gray"},{"text":"/tag @s list","color":"aqua","clickEvent":{"action":"run_command","value":"/tag @s list"}},{"text":" to check)","color":"gray"}]
+tellraw @s [{"text":"[","color":"dark_gray"},{"text":"Snore Debug","color":"gold","bold":true},{"text":"]","color":"dark_gray"},{"text":" \u26a0 Sim distance must be \u2265 8 chunks for villagers to sleep!","color":"yellow"}]
+tellraw @s [{"text":"[","color":"dark_gray"},{"text":"Snore Debug","color":"gold","bold":true},{"text":"]","color":"dark_gray"},{"text":" \u26a0 Stand within 10 blocks of sleeping entity!","color":"yellow"}]
+tellraw @s [{"text":"[","color":"dark_gray"},{"text":"Snore Debug","color":"gold","bold":true},{"text":"]","color":"dark_gray"},{"text":" \u26a0 Set Friendly Creatures volume > 0% in Sound Settings!","color":"yellow"}]
+return 1

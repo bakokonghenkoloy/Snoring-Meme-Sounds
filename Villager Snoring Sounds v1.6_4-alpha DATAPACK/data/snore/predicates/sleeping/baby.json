@@ -1,0 +1,5 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": { "nbt": "{Sleeping:1b,IsBaby:1b}" }
+}
