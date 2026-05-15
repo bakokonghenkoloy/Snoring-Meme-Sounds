@@ -243,6 +243,8 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 ### Alpha v1.6_5 — May 14, 2026
 - Minor bug fixes and descriptions rewriting
 
+- And yup clearly no clue what i'm heading towards at in the future because the Code is getting kinda messy but atleast it's all worth it and I'm trying my best to fix the wild ahh issues i've encountered: [v1.6_5-alpha and yes.....](https://github.com/bakokonghenkoloy/Snoring-Meme-Sounds/releases/tag/Yup_yes_indeed)
+
 ---
 
 [MIT LICENSE](LICENSE)
