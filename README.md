@@ -245,6 +245,17 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 
 - And yup clearly no clue what i'm heading towards at in the future because the Code is getting kinda messy but atleast it's all worth it and I'm trying my best to fix the wild ahh issues i've encountered: [v1.6_5-alpha and yes.....](https://github.com/bakokonghenkoloy/Snoring-Meme-Sounds/releases/tag/Yup_yes_indeed)
 
+### Alpha v1.6.6 — May 16, 2026
+#### Official Bug № 3 - Incompatibilities and More
+- "Broken or incompatible" red error in 1.21.11 and 26.x — KILLED.
+- Root cause: `pack_format: 84` being higher than what 1.21.11 expects. Now `pack_format: 34` for RP and `pack_format: 48` for DP (the absolute lowest/safest).
+- PLUS both supported_formats: `[34/48, 9999]` AND explicit `min_format/max_format` fields — that's double coverage hitting both the old array engine (1.21.x) and the new min/max engine (1.21.11+, 26.x). Soon that'll be justified no red error on ANY version.
+- `snore4` missing from `/function list` — FIXED. The bash declare -A array approach failed silently before (sh vs bash). Rebuilt in Python. All 8 test functions confirmed.
+#### Official Bug № 4 - Can't hear yourself momentos
+- Player can't hear themselves — FIXED.
+- The old code only played `neutral @a[distance=..10]`. When YOU are sleeping, Minecraft's sleeping animation moves your camera — the neutral channel plays at your position but doesn't guarantee self-hearing.
+- Now: `master @s` plays directly INTO your ears at 100% volume guaranteed, THEN `neutral @a[distance=1..,limit=10]` broadcasts to nearby OTHER players. Both channels fire. You will hear yourself snore.
+
 ---
 
 [MIT LICENSE](LICENSE)
