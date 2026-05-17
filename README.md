@@ -51,7 +51,6 @@ Neither file works alone. Install both.
 - `scoreboard objectives remove` BEFORE `add` → safe on every `/reload`
 - `nbt=!{IsBaby:1b}` instead of `nbt={IsBaby:0b}` → adult villagers don't always have IsBaby tag
 - `SleepTimer:1` (int not short `1s`) → correct NBT type for player sleep detection
-- `pack_format: 101.1` (decimal) → exact value required by Minecraft wiki for 26.x
 - `min_format` + `max_format` alongside `supported_formats` → hybrid for both old (1.21.x) and new (26.x) pack engines
 - Deferred announce via `snore_init` scoreboard → works for global instance-level datapacks where `#minecraft:load` fires before any player exists — only if you have [Global Packs Mod](https://modrinth.com/mod/globalpacks) installed as an optional dependency or do the manual method.
 
