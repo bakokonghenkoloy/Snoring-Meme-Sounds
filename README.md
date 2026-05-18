@@ -59,7 +59,7 @@ Neither file works alone. Install both.
 
 > ✅ -> Fully Compatible  
 > ❔️ -> Okay-ish  
->    -> Unknown (did no try in that version)  
+>    -> Unknown (did not try in that version)  
 > ❓️ -> Questionable  
 > ‼️ -> Incompatible
 
