@@ -101,7 +101,7 @@ Source: [Minecraft Wiki Pack Formats](https://minecraft.wiki/w/Pack_format)
 
 ---
 
-## ⚠️ Reporting Bugs because Bugs still exist in the Alpha Development Stage
+## ⚠️ Reporting Bugs because it still exist in the Alpha Development Stage
 ### 🗣️📢‼️ Report them all on GitHub
 **Please open an Issue in this Repository or reply in my first Discussion with:**
 - Exact Minecraft version (e.g. 26.1.2, 1.21.11, 1.21, etc.)
