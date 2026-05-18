@@ -62,7 +62,7 @@ Neither file works alone. Install both.
   ❓️ -> Questionable  
   ‼️ -> Incompatible  
 
-| Version | DP Format | RP Format | Status | Prev. Status |
+| Version | DP Format | RP Format | Cur. Status | Prev. Ver. |
 |---|---|---|---|---|
 | 1.21 | 48 | 34 | ‼️ | ❔️ |
 | 1.21.1 | 48 | 34 | ‼️ | ❔️ |
