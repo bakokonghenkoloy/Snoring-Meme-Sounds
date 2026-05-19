@@ -259,6 +259,16 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 - The old code only played `neutral @a[distance=..10]`. When YOU are sleeping, Minecraft's sleeping animation moves your camera — the neutral channel plays at your position but doesn't guarantee self-hearing.
 - Now: `master @s` plays directly INTO your ears at 100% volume guaranteed, THEN `neutral @a[distance=1..,limit=10]` broadcasts to nearby OTHER players. Both channels fire. You will hear yourself snore.
 
+### Alpha v1.6.7 — May 19, 2026
+#### What's New?
+- Baby villagers NOW have their own completely separate scoreboard `snore_bcd` — totally independent from adult `snore_vcd`.
+- Before, baby villagers were accidentally sharing the adult cooldown. Now: adult villager snores → sets `snore_vcd`.
+- Baby villager snores → sets `snore_bcd`.
+- Player snores → sets `snore_cd`.
+- Three fully separate async timers, no crossover ever.
+- Added `is_snoring_v` and `is_snoring_b` entity tags so the wake detection correctly identifies which entity type woke up and calls the right `wake_villager` or `wake_baby` function — completely separate from `wake_player`.
+- Fixed the oddly off rainbow gradient in the packs' description AND announce message.
+
 ---
 
 [MIT LICENSE](LICENSE)
