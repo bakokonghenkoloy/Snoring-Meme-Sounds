@@ -274,7 +274,8 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 - Did channel switch. Changed from `master @s` to `voice @s`.
 - The voice channel is specifically designed for player-emitted sounds and is guaranteed audible to the player themselves regardless of sleeping camera position.
 - Master can get blocked by the bed animation camera transition. `voice @s` = you WILL hear yourself.
-- Wake detection overly complex — simplified. Removed the broken unsupported `nbt=!{SleepingX:-2147483648}` fallback which was an unnecessary leftover.
+- Wake detection overly complex — now simplified.
+- Removed the broken unsupported `nbt=!{SleepingX:-2147483648}` fallback which was an unnecessary leftover.
 - Clean and neat unless `data entity @s SleepingX` is sufficient for all versions 1.21→26.x.
 
 ---
