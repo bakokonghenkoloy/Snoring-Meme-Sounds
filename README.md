@@ -55,7 +55,7 @@ Neither file works alone. Install both.
 - Deferred announce via `snore_init` scoreboard → works for global instance-level datapacks where `#minecraft:load` fires before any player exists — only if you have [Global Packs Mod](https://modrinth.com/mod/globalpacks) installed as an optional dependency or do the manual method installation.
 
 
-## Pack Format Compatibility and Indications
+## Pack Format Compatibility & Indications
 
 > ✅ -> Fully Compatible  
 > ❔️ -> Okay-ish  
@@ -63,16 +63,16 @@ Neither file works alone. Install both.
 > ❓️ -> Questionable  
 > ‼️ -> Incompatible
 
-| Version | DP Format | RP Format | Cur. Status | Prev. Ver. |
+| Version | DP Format | RP Format | Latest Ver | v1.6.6-alpha |
 |---|---|---|---|---|
 | 1.21 | 48 | 34 |  | ❔️ |
 | 1.21.1 | 48 | 34 |  | ❔️ |
-| 1.21.2 | 57 | 42 | ❔️ | ❔️ |
+| 1.21.2 | 57 | 42 |  | ❔️ |
 | 1.21.3 | 57 | 42 |  | ❔️ |
 | 1.21.4 | 61 | 46 |  | ❔️ |
 | 1.21.5 | 71 | 55 |  | ❓️ |
 | 1.21.6 | 80 | 63 |  | ❓️ |
-| 1.21.7 | 81 | 64 | ❓️ | ❓️ |
+| 1.21.7 | 81 | 64 |  | ❓️ |
 | 1.21.8 | 81 | 64 |  | ❓️ |
 | 1.21.9 | 88.0 | 69.0 |  | ❓️ |
 | 1.21.10 | 88.0 | 69.0 |  | ❓️ |
