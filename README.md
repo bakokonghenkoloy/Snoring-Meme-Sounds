@@ -269,6 +269,14 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 - Added `is_snoring_v` and `is_snoring_b` entity tags so the wake detection correctly identifies which entity type woke up and calls the right `wake_villager` or `wake_baby` function — completely separate from `wake_player`.
 - Fixed the oddly off rainbow gradient in the packs' description AND announce message.
 
+### Alpha v1.6.7_1 — May 20, 2026
+#### Official Bug №5 — Player can't hear themselves snoring.
+- Did channel switch. Changed from `master @s` to `voice @s`.
+- The voice channel is specifically designed for player-emitted sounds and is guaranteed audible to the player themselves regardless of sleeping camera position.
+- Master can get blocked by the bed animation camera transition. `voice @s` = you WILL hear yourself.
+- Wake detection overly complex — simplified. Removed the broken unsupported `nbt=!{SleepingX:-2147483648}` fallback which was an unnecessary leftover.
+- Clean and neat unless `data entity @s SleepingX` is sufficient for all versions 1.21→26.x.
+
 ---
 
 [MIT LICENSE](LICENSE)
