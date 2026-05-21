@@ -63,7 +63,7 @@ Neither file works alone. Install both.
 > ❓️ -> Questionable  
 > ‼️ -> Incompatible
 
-| Version | DP Format | RP Format | Latest Ver | v1.6.6-alpha |
+| Version | DP Format | RP Format | Latest Ver | v1.6.7-alpha |
 |---|---|---|---|---|
 | 1.21 | 48 | 34 |  | ❔️ |
 | 1.21.1 | 48 | 34 |  | ❔️ |
