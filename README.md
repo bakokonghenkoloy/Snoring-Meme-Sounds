@@ -64,7 +64,7 @@ Neither file works alone. Install both.
 > ‼️ -> Incompatible
 
 | Version | DP Format | RP Format | Cur. Status |
-|---|---|---|---|---|
+|---|---|---|---|
 | 1.21 | 48 | 34 | ❔️ |
 | 1.21.1 | 48 | 34 | ❔️ |
 | 1.21.2 | 57 | 42 | ❔️ |
