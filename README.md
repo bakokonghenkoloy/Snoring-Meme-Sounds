@@ -280,9 +280,15 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 
 ### Alpha v1.6.7_2 — May 21, 2026
 #### Official Bug Number №6 — THE BROKEN RAINBOW ROOT CAUSE IS NOW KILLED.
-- §F and §A and §E etc. are NOT valid Minecraft hex color format characters after I realized what in the world just happened in my pack's description i've noticed since v1.6.7-alpha. Minecraft's §x hex system only recognizes LOWERCASE §a-§f. Every uppercase letter in the color codes was silently ignored, which is why I saw a wild ahh broken incomplete rainbow that I didn't bother to fix because I was lazy at that time...
-- TELLRAW rainbow also rebuilt using "color":"#ff0000" hex color components in JSON — this is the cleanest method that can't break after what I prayed for lmao.
+- `§F` and `§A` and `§E` etc. are NOT valid Minecraft hex color format characters after I realized what in the world just happened in my pack's description i've noticed since v1.6.7-alpha. Minecraft's `§x` hex system only recognizes LOWERCASE `§a-§f`. Every uppercase letter in the color codes was silently ignored, which is why I saw a wild ahh broken incomplete rainbow that I didn't bother to fix because I was lazy at that time...
+- TELLRAW rainbow also rebuilt using `"color":"#ff0000"` hex color components in JSON — this is the cleanest method that can't break after what I prayed for lmao.
 - Converted all files to MONO OGGs — THE REAL REASON I HEARD WILD AHH SOUNDS 20+ BLOCKS AWAY, especially that snore5.ogg sound😏️ Stereo .ogg files bypass Minecraft's 3D positional audio entirely — they play at 100% volume everywhere regardless of distance. Now my new Audacity-converted mono files are updated for the Resource Pack. Now distance falloff actually works: 100% volume at 1 block, fades naturally up to 10 blocks, silent at 11+ blocks just exactly what I've promised🥲️🙏️
+
+### Alpha v1.6.7_3 — May 22, 2026
+- Still continuing to fix Rainbow — Sometimes the Birdflop website is not giving me any supported formats... The root cause was `§f` (lowercase) being intercepted by Minecraft as "white color" BEFORE the `§x` processor could use it. Uppercase §F has no standalone meaning so the full 6-digit hex color processes correctly. v1.6.7_3 now uses exact birdflop output translated properly.
+- I think now we can properly see full "Snoring Sleeping Sounds!" rainbow properly now.
+- Reconfirmed Villagers in 1.21.5+ `if data entity @s SleepingX` and Player self-hearing `voice @s`
+
 ---
 
 [MIT LICENSE](LICENSE)
