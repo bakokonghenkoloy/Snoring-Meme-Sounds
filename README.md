@@ -290,7 +290,7 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 - Reconfirmed Villagers in 1.21.5+ `if data entity @s SleepingX` and Player self-hearing `voice @s`
 
 ### Alpha v1.6.7_4-alpha — May 23, 2026
-#### Official Bug N№7 — So Many Sound Problems! I literally have no reason to compile GLFW 3.4.0 and OpenAL 1.25.1 from source for this to avoid using my Linux and LWJGL'S given files because 26.1.2, 1.12.2 and Beta 1.7.3 went dead silent...
+#### Official Bug №7 — So Many Sound Problems! I literally have no reason to compile GLFW 3.4.0 and OpenAL 1.25.1 from source for this to avoid using my Linux and LWJGL'S given files because 26.1.2, 1.21, 1.12.2 and lastly Beta 1.7.3 went dead silent...
 - Added and changed to `custom.snoring.adult` and `custom.snoring.player`
 - `stopsound` murdering the audio (THE reason I always never heard myself and yourself), when click the bed at night, Minecraft then skips to morning almost instantly. Your `SleepTimer:1..` tag fires → sound plays → night skip → `wake_player` fires → `stopsound` kills the audio before your ears receive it. Removed `stopsound` entirely from `wake_player`. The sound naturally completes.
 - `distance=1..` excluded from some sounds — `playsound ... @a[distance=1..,limit=10]` = *"everyone 1+ blocks away."* When at distance 0 from yourself, ended up excluded from playsound call every single time. Fixed to `@a[distance=..10]` which includes everyone including us.
