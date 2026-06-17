@@ -9,7 +9,7 @@
 
 ---
 
-# Adds 8 unhinged meme snoring sounds to villagers AND players — Java Edition 1.21 → 26.1.2
+# Adds 8 unhinged meme snoring sounds to villagers AND players — Java Edition 1.21 → 26.2
 
 ---
 
@@ -80,8 +80,10 @@ Neither file works alone. Install both.
 | 26.1 | 101.1 | 84.0 | ❓️ |
 | 26.1.1 | 101.1 | 84.0 | ❓️ |
 | 26.1.2 | 101.1 | 84.0 | ❓️ |
+| 26.2 | 107.1 | 88.0 | ❓️ |
 
 Source: [Minecraft Wiki Pack Formats](https://minecraft.wiki/w/Pack_format)
+> Beware sometimes it's deeply inaccurate or outdated.
 
 ---
 
