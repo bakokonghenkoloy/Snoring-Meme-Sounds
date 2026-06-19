@@ -304,7 +304,7 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 Yeah.. i got super lazy.. can't even bother fixing this but i had balls of steel and managed to fix everything i could, i got overloaded and sleep deprived trying, accidentally prioritizing this above all than everything else in life.. i tried my best to literally able to make all things work i guess🥲️ But this is what i come up with!
 If there are any issues.. please don't be afraid talking about it to me here: [let's talk about it anything you want](https://github.com/bakokonghenkoloy/Snoring-Meme-Sounds/issues/1)
 
-## And if you enjoyed it so much! Then enjoy it!🥲️
+#### And if you enjoyed it so much! Then thanks for enjoying it!🥲️😅️
 
 ### Alpha v1.6.7_6 — June 17, 2026
 #### Official Bug №8 — The "Only Snores Once Per Night" Root Cause — KILLED.
