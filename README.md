@@ -299,6 +299,57 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 - `stopsound` murdering the audio (THE reason I always never heard myself and yourself), when click the bed at night, Minecraft then skips to morning almost instantly. Your `SleepTimer:1..` tag fires → sound plays → night skip → `wake_player` fires → `stopsound` kills the audio before your ears receive it. Removed `stopsound` entirely from `wake_player`. The sound naturally completes.
 - `distance=1..` excluded from some sounds — `playsound ... @a[distance=1..,limit=10]` = *"everyone 1+ blocks away."* When at distance 0 from yourself, ended up excluded from playsound call every single time. Fixed to `@a[distance=..10]` which includes everyone including us.
 
+### Alpha v1.6.7_5-alpha — May 25, 2026
+
+Yeah.. i got super lazy.. can't even bother fixing this but i had balls of steel and managed to fix everything i could, i got overloaded and sleep deprived trying, accidentally prioritizing this above all than everything else in life.. i tried my best to literally able to make all things work i guess🥲️ But this is what i come up with!
+If there are any issues.. please don't be afraid talking about it to me here: [let's talk about it anything you want](https://github.com/bakokonghenkoloy/Snoring-Meme-Sounds/issues/1)
+
+## And if you enjoyed it so much! Then enjoy it!🥲️
+
+### Alpha v1.6.7_6 — June 17, 2026
+#### Official Bug №8 — The "Only Snores Once Per Night" Root Cause — KILLED.
+- ROOT CAUSE FOUND: `tag=!is_snoring_v` and `tag=!is_snoring_b` in play selectors.
+  After first snore, tag is added → selector condition permanently blocks re-play
+  during the same sleep session. Cooldown hits 0, condition fails silently, silence.
+  Tag only removed at wake-up. So: ONE snore per sleep. Forever.
+- FIX: Removed `tag=!is_snoring_v` from play/villager/adult.mcfunction (both lines).
+  Removed `tag=!is_snoring_b` from play/villager/baby.mcfunction (both lines).
+  Tags remain on entities for wake-detection — they just no longer block re-play.
+- Also fixes 1.21.7 "villagers silent on load" since tag was the same blocker there.
+
+#### Official Bug №9 — wake_villager stopped the WRONG sound — KILLED.
+- `stopsound @a neutral minecraft:entity.villager.sleep` = Mojang vanilla event.
+  Custom snoring plays on `custom.snoring.adult`. These are different events.
+  stopsound was firing into the void every wake. Custom sound kept playing.
+- FIX: `execute at @s run stopsound @a[distance=..20] neutral custom.snoring.adult`
+  Also limited to distance 20 (was global @a = every player in dimension).
+
+#### Official Bug №10 — Load/announce randomization 0..552 too wide — KILLED.
+- 0..552 = max 27.6 second wait before villagers already in beds make any sound.
+  Player goes to sleep before the cooldown expires → villagers look permanently silent.
+- FIX: Changed to `random value 0..20` in BOTH core/load.mcfunction AND
+  util/announce.mcfunction. Max 1 second wait. Villagers in beds snore near-instantly.
+
+#### Official Bug №11 — In-game repeat cooldown 135..552 caused SP silence — KILLED.
+- Min 135 ticks (6.75s) between snores. SP night-skip = ~4 seconds total.
+  Zero repeat snores could fit inside a single-player sleep cycle.
+- FIX: Changed to `random value 60..120` (3–6 seconds) in util/sound/adult,
+  util/sound/baby, util/sound/player. Multiple snores now fire per sleep.
+  Continuous snoring feeling achieved. Note: snore5 (25.6s) will slightly overlap
+  with next cycle — this is intentional per user request for endless snoring.
+
+#### Official Bug №12 — wake_baby stopsound targeted all players globally — KILLED.
+- `stopsound @a` = broadcast to entire dimension. Inefficient and unnecessary.
+- FIX: `execute at @s run stopsound @a[distance=..20] neutral custom.snoring.baby`
+
+#### Cosmetic Fix — Stars ★ restored to rainbow announce message.
+- Added {"text":"★ ","color":"gold"} at start and {"text":" ★","color":"gold"}
+  at end of the rainbow tellraw extra array.
+
+#### No changes to: sounds.json, tick.mcfunction, play/player.mcfunction,
+#### wake_player.mcfunction, core/tick.mcfunction, all test functions, all OGG files,
+#### lang files, pack formats, or any other files not listed above.
+
 ---
 
 [MIT LICENSE](LICENSE)
