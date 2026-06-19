@@ -45,7 +45,9 @@ Neither file works alone. Install both.
 |---|---|
 | `snore_cd` | Player cooldown |
 | `snore_vcd` | Villager cooldown |
-| `snore_init` | Deferred announce flag (fires once on first player join) |
+| `snore_bcd` | Baby villager cooldown |
+| `snore_init` | Deferred announce flag (fires on first join) |
+| `snore_sleep` | Player SleepTimer mirror |
 
 ### Key foundation design decisions
 - `scoreboard objectives remove` BEFORE `add` → safe on every `/reload`
