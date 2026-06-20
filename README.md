@@ -300,6 +300,9 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 - `distance=1..` excluded from some sounds — `playsound ... @a[distance=1..,limit=10]` = *"everyone 1+ blocks away."* When at distance 0 from yourself, ended up excluded from playsound call every single time. Fixed to `@a[distance=..10]` which includes everyone including us.
 
 ### Alpha v1.6.7_5-alpha — May 25, 2026
+- `distance=1..` excluded you (at `distance=0` from yourself) — fixed to `distance=..10`
+- `stopsound` in `wake_player` fired immediately when SP night skip happened — killed the audio before your ears got even one tick. Removed entirely.
+- `neutral @a` channel works — `voice @s` was unreliable because Voice/Speech slider often disabled
 
 Yeah.. i got super lazy.. can't even bother fixing this but i had balls of steel and managed to fix everything i could, i got overloaded and sleep deprived trying, accidentally prioritizing this above all than everything else in life.. i tried my best to literally able to make all things work i guess🥲️ But this is what i come up with!
 If there are any issues.. please don't be afraid talking about it to me here: [let's talk about it anything you want](https://github.com/bakokonghenkoloy/Snoring-Meme-Sounds/issues/1)
