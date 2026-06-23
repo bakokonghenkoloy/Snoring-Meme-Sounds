@@ -310,6 +310,8 @@ If there are any issues.. please don't be afraid talking about it to me here: [l
 
 #### And if you enjoyed it so much! Then thanks for enjoying it!🥲️😅️
 
+Hey guys i'm sorry for the long pause and the long wait and experiencing some problems with my datapack.. Now I got senior high started since in June 8, 2026 and yet hopefully you all able to fully enjoy what i've worked so hard for you! And now thanks for all those people that appreciate trying this out!
+
 ### Alpha v1.6.7_6 — June 17, 2026
 #### Official Bug №8 — The "Only Snores Once Per Night" Root Cause — KILLED.
 - ROOT CAUSE FOUND: `tag=!is_snoring_v` and `tag=!is_snoring_b` in play selectors.
@@ -346,13 +348,40 @@ If there are any issues.. please don't be afraid talking about it to me here: [l
 - `stopsound @a` = broadcast to entire dimension. Inefficient and unnecessary.
 - FIX: `execute at @s run stopsound @a[distance=..20] neutral custom.snoring.baby`
 
-#### Cosmetic Fix — Stars ★ restored to rainbow announce message.
-- Added {"text":"★ ","color":"gold"} at start and {"text":" ★","color":"gold"}
-  at end of the rainbow tellraw extra array.
+### Alpha v1.6.7_7 — June 23, 2026
+#### Official Bug №13 — Day-time snoring persisting — ROOT CAUSE: Brain.memories
+- Confirmed via current Minecraft Entity Format docs that `sleeping_pos` exists
+  as a TOP-LEVEL mob tag (Int Array, absent when not sleeping) — separate from
+  the nested `Brain.memories."minecraft:sleeping_pos"` path this pack relied on.
+- The nested path can linger stale after waking, deadlocking wake detection
+  forever — entity tagged is_snoring_v/b never clears, snores all day.
+- FIX: Added `sleeping_pos` (top-level) as a third independent OR-check for
+  play AND a third unless-check for wake, on top of the existing two paths.
+  Triple-redundant detection now covers every version 1.21 through 26.2+.
 
-#### No changes to: sounds.json, tick.mcfunction, play/player.mcfunction,
-#### wake_player.mcfunction, core/tick.mcfunction, all test functions, all OGG files,
-#### lang files, pack formats, or any other files not listed above.
+#### Official Bug №14 — Overlapping/duplicate snore sounds — ROOT CAUSE: math
+- Measured actual OGG durations via ffprobe: snore1=10.05s, snore2=7.24s,
+  snore3=4.97s, snore4=11.62s, snore5=25.62s, snore6=13.99s, snore7=5.14s,
+  snore8=6.23s. The v1.6.7_6 cooldown (3-6s) was shorter than 7 of 8 sounds,
+  causing a new snore to fire mid-playback of the previous one every time.
+- FIX: Complete architecture change. util/sound/adult, util/sound/baby, and
+  util/sound/player now roll their OWN random pick (1-8) and call that exact
+  numbered single-entry sound event (custom.snoring.test.snoreN), then set
+  the cooldown to that EXACT measured duration (+1 tick buffer). Baby duration
+  is duration÷1.75 to account for the pitch-speedup. Zero overlap guaranteed
+  by direct duration matching instead of guessing via a fixed random range.
+- Trade-off: per-call pitch jitter removed (was 0.75-1.25 for adult, 1.5-2.0
+  pool for baby) in favor of fixed pitch (1.0 adult/player, 1.75 baby) so
+  duration math stays exact. 8-sound variety preserved. Pooled sounds.json
+  events (custom.snoring.adult/baby/player) remain untouched for other uses.
+
+#### Official Bug №15 — Sounds not stopping immediately on wake
+- wake_player.mcfunction previously had ZERO stopsound calls (intentional in
+  v1.6.7_4 to avoid truncating audio during instant SP night-skip).
+- Per explicit request, added 8 stopsound calls (one per possible sound) to
+  wake_villager, wake_baby, AND wake_player. Safe now because deterministic
+  timing means sounds normally finish naturally before wake fires anyway —
+  this only catches early-wake edge cases, satisfying "stop immediately."
 
 ---
 
