@@ -253,12 +253,12 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 - Here is a random post I made: [v1.6_5-alpha and yes.....](https://github.com/bakokonghenkoloy/Snoring-Meme-Sounds/releases/tag/Yup_yes_indeed)
 
 ### Alpha v1.6.6 — May 16, 2026
-#### Official Bug № 3 - Incompatibilities and More
+#### Official Bug №4 - Incompatibilities and More
 - "Broken or incompatible" red error in 1.21.11 and 26.x — KILLED.
 - Root cause: `pack_format: 84` being higher than what 1.21.11 expects. Now `pack_format: 34` for RP and `pack_format: 48` for DP (the absolute lowest/safest).
 - PLUS both supported_formats: `[34/48, 9999]` AND explicit `min_format/max_format` fields — that's double coverage hitting both the old array engine (1.21.x) and the new min/max engine (1.21.11+, 26.x). Soon that'll be justified no red error on ANY version.
 - `snore4` missing from `/function list` — FIXED. The bash declare -A array approach failed silently before (sh vs bash). Rebuilt in Python. All 8 test functions confirmed.
-#### Official Bug № 4 - Can't hear yourself momentos
+#### Official Bug №5 - Can't hear yourself momentos
 - Player can't hear themselves — FIXED.
 - The old code only played `neutral @a[distance=..10]`. When YOU are sleeping, Minecraft's sleeping animation moves your camera — the neutral channel plays at your position but doesn't guarantee self-hearing.
 - Now: `master @s` plays directly INTO your ears at 100% volume guaranteed, THEN `neutral @a[distance=1..,limit=10]` broadcasts to nearby OTHER players. Both channels fire. You will hear yourself snore.
@@ -274,7 +274,7 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 - Fixed the oddly off rainbow gradient in the packs' description AND announce message.
 
 ### Alpha v1.6.7_1 — May 20, 2026
-#### Official Bug №5 — Player can't hear themselves snoring.
+#### Official Bug №6 — Player can't hear themselves snoring.
 - Did channel switch. Changed from `master @s` to `voice @s`.
 - The voice channel is specifically designed for player-emitted sounds and is guaranteed audible to the player themselves regardless of sleeping camera position.
 - Master can get blocked by the bed animation camera transition. `voice @s` = you WILL hear yourself.
@@ -283,7 +283,7 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 - Clean and neat unless `data entity @s SleepingX` is sufficient for all versions 1.21→26.x.
 
 ### Alpha v1.6.7_2 — May 21, 2026
-#### Official Bug Number №6 — THE BROKEN RAINBOW ROOT CAUSE IS NOW KILLED.
+#### Official Bug Number №7 — THE BROKEN RAINBOW ROOT CAUSE IS NOW KILLED.
 - `§F` and `§A` and `§E` etc. are NOT valid Minecraft hex color format characters after I realized what in the world just happened in my pack's description i've noticed since v1.6.7-alpha. Minecraft's `§x` hex system only recognizes LOWERCASE `§a-§f`. Every uppercase letter in the color codes was silently ignored, which is why I saw a wild ahh broken incomplete rainbow that I didn't bother to fix because I was lazy at that time...
 - TELLRAW rainbow also rebuilt using `"color":"#ff0000"` hex color components in JSON — this is the cleanest method that can't break after what I prayed for lmao.
 - Converted all files to MONO OGGs — THE REAL REASON I HEARD WILD AHH SOUNDS 20+ BLOCKS AWAY, especially that `snore5.ogg` sound😏️ Stereo `.ogg` files bypass Minecraft's 3D positional audio entirely — they play at 100% volume everywhere regardless of distance. Now my new Audacity-converted mono files are updated for the Resource Pack. Now distance falloff actually works: 100% volume at 1 block, fades naturally up to 10 blocks, silent at 11+ blocks just exactly what I've promised🥲️🙏️
@@ -294,7 +294,7 @@ Make it very detailed — **when, where, what, why, how, and who** — so we can
 - Reconfirmed Villagers in 1.21.5+ `if data entity @s SleepingX` and Player self-hearing `voice @s`
 
 ### Alpha v1.6.7_4-alpha — May 23, 2026
-#### Official Bug №7 — So Many Sound Problems! I literally have no reason to compile GLFW 3.4.0 and OpenAL 1.25.1 from source for this to avoid using my Linux and LWJGL'S given files because 26.1.2, 1.21, 1.12.2 and lastly Beta 1.7.3 went dead silent...
+#### Official Bug №8 — So Many Sound Problems! I literally have no reason to compile GLFW 3.4.0 and OpenAL 1.25.1 from source for this to avoid using my Linux and LWJGL'S given files because 26.1.2, 1.21, 1.12.2 and lastly Beta 1.7.3 went dead silent...
 - Added and changed to `custom.snoring.adult` and `custom.snoring.player`
 - `stopsound` murdering the audio (THE reason I always never heard myself and yourself), when click the bed at night, Minecraft then skips to morning almost instantly. Your `SleepTimer:1..` tag fires → sound plays → night skip → `wake_player` fires → `stopsound` kills the audio before your ears receive it. Removed `stopsound` entirely from `wake_player`. The sound naturally completes.
 - `distance=1..` excluded from some sounds — `playsound ... @a[distance=1..,limit=10]` = *"everyone 1+ blocks away."* When at distance 0 from yourself, ended up excluded from playsound call every single time. Fixed to `@a[distance=..10]` which includes everyone including us.
@@ -310,10 +310,9 @@ If there are any issues.. please don't be afraid talking about it to me here: [l
 
 #### And if you enjoyed it so much! Then thanks for enjoying it!🥲️😅️
 
-Hey guys i'm sorry for the long pause and the long wait and experiencing some problems with my datapack.. Now I got senior high started since in June 8, 2026 and yet hopefully you all able to fully enjoy what i've worked so hard for you! And now thanks for all those people that appreciate trying this out!
-
 ### Alpha v1.6.7_6 — June 17, 2026
-#### Official Bug №8 — The "Only Snores Once Per Night" Root Cause — KILLED.
+Hey guys i'm sorry for the long pause and the long wait and experiencing some problems with my datapack.. Now I got senior high started since in June 8, 2026 and yet hopefully you all able to fully enjoy what i've worked so hard for you! And now thanks for all those people that appreciate trying this out!
+#### Official Bug №9 — The "Only Snores Once Per Night" Root Cause — KILLED.
 - ROOT CAUSE FOUND: `tag=!is_snoring_v` and `tag=!is_snoring_b` in play selectors.
   After first snore, tag is added → selector condition permanently blocks re-play
   during the same sleep session. Cooldown hits 0, condition fails silently, silence.
@@ -323,20 +322,20 @@ Hey guys i'm sorry for the long pause and the long wait and experiencing some pr
   Tags remain on entities for wake-detection — they just no longer block re-play.
 - Also fixes 1.21.7 "villagers silent on load" since tag was the same blocker there.
 
-#### Official Bug №9 — wake_villager stopped the WRONG sound — KILLED.
+#### Official Bug №10 — wake_villager stopped the WRONG sound — KILLED.
 - `stopsound @a neutral minecraft:entity.villager.sleep` = Mojang vanilla event.
   Custom snoring plays on `custom.snoring.adult`. These are different events.
   stopsound was firing into the void every wake. Custom sound kept playing.
 - FIX: `execute at @s run stopsound @a[distance=..20] neutral custom.snoring.adult`
   Also limited to distance 20 (was global @a = every player in dimension).
 
-#### Official Bug №10 — Load/announce randomization 0..552 too wide — KILLED.
+#### Official Bug №11 — Load/announce randomization 0..552 too wide — KILLED.
 - 0..552 = max 27.6 second wait before villagers already in beds make any sound.
   Player goes to sleep before the cooldown expires → villagers look permanently silent.
 - FIX: Changed to `random value 0..20` in BOTH core/load.mcfunction AND
   util/announce.mcfunction. Max 1 second wait. Villagers in beds snore near-instantly.
 
-#### Official Bug №11 — In-game repeat cooldown 135..552 caused SP silence — KILLED.
+#### Official Bug №12 — In-game repeat cooldown 135..552 caused SP silence — KILLED.
 - Min 135 ticks (6.75s) between snores. SP night-skip = ~4 seconds total.
   Zero repeat snores could fit inside a single-player sleep cycle.
 - FIX: Changed to `random value 60..120` (3–6 seconds) in util/sound/adult,
@@ -344,12 +343,12 @@ Hey guys i'm sorry for the long pause and the long wait and experiencing some pr
   Continuous snoring feeling achieved. Note: snore5 (25.6s) will slightly overlap
   with next cycle — this is intentional per user request for endless snoring.
 
-#### Official Bug №12 — wake_baby stopsound targeted all players globally — KILLED.
+#### Official Bug №13 — wake_baby stopsound targeted all players globally — KILLED.
 - `stopsound @a` = broadcast to entire dimension. Inefficient and unnecessary.
 - FIX: `execute at @s run stopsound @a[distance=..20] neutral custom.snoring.baby`
 
 ### Alpha v1.6.7_7 — June 23, 2026
-#### Official Bug №13 — Day-time snoring persisting — ROOT CAUSE: Brain.memories
+#### Official Bug №14 — Day-time snoring persisting — ROOT CAUSE: Brain.memories
 - Confirmed via current Minecraft Entity Format docs that `sleeping_pos` exists
   as a TOP-LEVEL mob tag (Int Array, absent when not sleeping) — separate from
   the nested `Brain.memories."minecraft:sleeping_pos"` path this pack relied on.
@@ -359,7 +358,7 @@ Hey guys i'm sorry for the long pause and the long wait and experiencing some pr
   play AND a third unless-check for wake, on top of the existing two paths.
   Triple-redundant detection now covers every version 1.21 through 26.2+.
 
-#### Official Bug №14 — Overlapping/duplicate snore sounds — ROOT CAUSE: math
+#### Official Bug №15 — Overlapping/duplicate snore sounds — ROOT CAUSE: math
 - Measured actual OGG durations via ffprobe: snore1=10.05s, snore2=7.24s,
   snore3=4.97s, snore4=11.62s, snore5=25.62s, snore6=13.99s, snore7=5.14s,
   snore8=6.23s. The v1.6.7_6 cooldown (3-6s) was shorter than 7 of 8 sounds,
@@ -375,7 +374,7 @@ Hey guys i'm sorry for the long pause and the long wait and experiencing some pr
   duration math stays exact. 8-sound variety preserved. Pooled sounds.json
   events (custom.snoring.adult/baby/player) remain untouched for other uses.
 
-#### Official Bug №15 — Sounds not stopping immediately on wake
+#### Official Bug №16 — Sounds not stopping immediately on wake
 - wake_player.mcfunction previously had ZERO stopsound calls (intentional in
   v1.6.7_4 to avoid truncating audio during instant SP night-skip).
 - Per explicit request, added 8 stopsound calls (one per possible sound) to
